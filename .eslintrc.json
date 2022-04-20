@@ -23,6 +23,7 @@
       "extends": ["plugin:testing-library/react"]
     }
   ],
+  "ignorePatterns": ["jest.*"],
   "rules": {
     "prefer-const": "error",
     "prettier/prettier": "error"
