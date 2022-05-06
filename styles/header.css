@@ -1,0 +1,233 @@
+/* SMALL Only */
+@media screen and (max-width: 768px){
+
+}
+
+:root {
+    --nav-height: 48px;
+}
+
+#header {
+    position: relative;
+}
+#header.sticky  {
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    z-index: 100;
+}
+
+#header-bg {
+    position:absolute;
+    visibility:hidden;
+    width: 100vw;
+    height: 112px;
+    min-height: 112px;
+    object-fit: cover;
+    -o-object-fit: cover;
+    overflow: hidden;   
+}
+#header-bg img {
+    position:absolute;
+    height: 112px;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.sticky #header-bg {
+    visibility: visible;
+}
+
+.sticky #content {
+    margin-top: 112px;
+}
+
+#header .col {
+    padding: 0px;
+}
+
+/* BASELINE SMALL and up */
+#primary-header {
+    position: relative;
+    z-index: 5;
+    -webkit-box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.50);
+    -moz-box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.50);
+    box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.50);
+}
+#logo-row {
+   height: 48px;
+}
+
+#primary-header a,
+#primary-header a:visited,
+#primary-header a:active {
+    color: #efefef;
+}
+#primary-header a:hover {
+    background-color: rgba(255,255,255,0.33);
+}
+#logo-row .bed {
+    background-color: transparent;
+}
+#logo-row .bed .col,
+#logo-row .mL,
+#logo-row .mR { 
+    background-color: white;
+}
+
+
+#intro-nav {
+    list-style-type: none;
+    position:absolute;
+    width: 274px;
+    height: 48px;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0px;
+    padding: 0px;
+    color: #000;
+    display: block;
+    opacity:0;
+    transition-property:opacity;
+    transition-duration:.3s;
+    transition-delay:.0s;
+    z-index:3;
+}
+/* prevent initial display bounce */
+.nav-mode #intro-nav {
+    opacity:1.0;
+    transition-duration:.3s;
+    transition-delay:.2s;
+}
+ #intro-nav li {
+    display: inline-block;
+    position: relative;
+    margin: 0px 4px;
+    line-height: 1em;
+    font-weight: 600;
+    font-family: "Raleway";
+    text-align: center;
+}
+#intro-nav li:first-child {
+    margin-left: 0px;
+    text-align: left;
+}
+#intro-nav li:last-child {
+    margin-right: 0px;
+    text-align: right;
+}
+#intro-nav li a {
+    display: inline-block;
+    height: 48px;
+    width: 82px;
+    padding-top: 14px;
+    font-size: 1.2em;
+}
+
+
+#nav-row {
+    position: relative;
+    -webkit-box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.33);
+    -moz-box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.33);
+    box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.33);
+    z-index: 3;
+    height: 48px;
+    text-align: center;
+    transition-property: height;
+    transition-duration: .3s;
+    overflow:hidden;
+}
+/* TODO: this is confusing, that nav-mode on the parent, makes height 0 */
+.nav-mode #nav-row {
+    height: 0px;
+}
+#nav-row a,
+#nav-row a:visited,
+#nav-row a:active {
+    color: #eee;
+}
+#nav-row > div {
+    background-color: #541178;
+    /* background: linear-gradient(0deg, rgba(84,17,120,1) 80%, rgba(76,15,110,1) 100%); */
+    background-color: rgb(255,255,255,0.20);
+} 
+#intro-nav a,
+#intro-nav a:visited,
+#intro-nav a:active {
+    color: #000;
+}
+#nav {
+   list-style-type: none;
+    padding: 1px 0px 0px 0px;
+    margin: 1px 0 0 0;
+    height: 30px;
+    min-width: 326px;
+}
+#nav li {
+    display: inline-block;
+    position: relative;
+    margin: 0px 6px;
+    line-height: 1em;
+    font-weight: 600;
+    font-family: "Raleway";
+    text-align: center;
+}
+#nav li:first-child {
+    margin-left: 0px;
+    text-align: left;
+}
+#nav li:last-child {
+    margin-right: 0px;
+    text-align: right;
+}
+#nav li a {
+    display: inline-block;
+    height: 48px;
+    width: 82px;
+    padding-top: 14px;
+    font-size: 1.1em;
+}
+
+
+#social {
+    position: absolute;
+    top: 8px;
+    right: 0px;
+    width: 124px;
+    margin: 0;
+    padding: 0;
+}
+#social li {
+    position: relative;
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    margin: 0px 4px;
+}
+#social img {
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    z-index: 5;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* MEDIUM and up */
+@media screen and (min-width: 768px){ }
+/* LARGE and up */
+@media screen and (min-width: 992px){ }
+/* XLARGE and up */
+@media screen and (min-width: 1100px){ }
+/* XXLARGE and up */
+@media screen and (min-width: 1200px){ }
+/* SMALL and down */
+@media (max-width: 768px){ }
+/* MEDIUM and down */
+@media (max-width: 992px){ }
+/* LARGE and down */
+@media (min-width: 1100px){ }
+/* XLARGE and down */
+@media (min-width: 1280px){ }

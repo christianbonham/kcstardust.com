@@ -1,0 +1,86 @@
+.kcs {
+    position: relative;
+    z-index: 10;
+}
+
+.kcs h2.flair {
+    font-family: 'Kalam', cursive;
+    font-size: 1.6rem;
+    line-height: 1.2em;
+    margin-bottom: 1em;
+}
+.kcs h2.flair.large {
+    font-size: 1.7rem;
+}
+
+.kcs .clients {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+.kcs .clients li {
+    display:block;
+    text-align:center;
+    margin-bottom: 10px;
+}
+.kcs .clients li.text {
+    margin-top: 20px;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+.kcs .partner-list {
+    margin-bottom: .5em;
+}
+.kcs .partner-row {
+    display: flex;
+    justify-content:center;
+    margin-bottom: 1.2em;
+}
+.kcs .partner-col {
+    text-align:center;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-left: .5em;
+    margin-right: .5em;
+}
+
+.kcs ul.disciplines {
+    margin:0;
+    padding:0;
+    list-style-type: none;
+}
+
+.kcs .disciplines li {
+    padding-left:0px;
+    font-size: 1.2em;
+    font-weight: bold;
+    display: inline-block;
+    text-align:center;
+    color: #888;
+}
+.kcs .disciplines span {
+    color: #000;
+    padding-right: 6px;
+}
+.kcs .disciplines li::after {
+    content: "|";
+}
+.kcs .disciplines li:last-child::after {
+    content: '';
+}
+
+.bio {
+    margin: 2em 0em;
+}
+.bio .icons {
+    float: right;
+}
+
+
+
+.greedy-box {
+    margin-top: -24px;
+    margin-bottom: 24px;
+    height: 100%;
+    background-color: white;
+}

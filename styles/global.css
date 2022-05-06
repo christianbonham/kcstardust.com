@@ -1,53 +1,211 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+/* SMALL Only */
+@media screen and (max-width: 768px){
 }
 
+/* BASELINE SMALL and up */
+:root {
+    --header-height: 112px;
+    --legal-foot-height: 48px;
+    --margin-width: 16px;  
+    --margin-height: 8px;  
+}
 * {
   box-sizing: border-box;
 }
-
-main {
-  padding: 5rem 0;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+html { 
+    font-size: 16px; 
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    margin: 0 auto 0 auto;
+    padding: 0;
+    width: 100%;
+    min-width: 360px;
+}
+a { text-decoration: none; }
+a:hover {
+    text-decoration: underline;
+}
+h1, h2, h3 {
+    font-family: 'Montserrat';
+}
+h2 {
+    margin-bottom: .3em;
+}
+p {
+    margin-top: .3em;
+    margin-bottom: 1.5em;
+}
+p.large {
+    font-size: 1.2em;
+}
+.white hr {
+    color: #666666;
+    background-color: #666666;
+    line-height: 1px;
+    border-width: 0px;
+    height: 1px;
 }
 
-footer {
-  width: 100%;
-  height: 100px;
-  border-top: 1px solid #eaeaea;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+a.nav-anchor {
+    display:block;
+    height: calc( var(--header-height)  );
+}
+.nav-anchor > div {
+    height: calc( var(--header-height)/2 );
 }
 
-footer img {
-  margin-left: 0.5rem;
+#splash-trigger {
+    position: relative;
+    top: calc(100vh - 96px - 170px);
+}
+#splash {
+    box-sizing: border-box;
+    position:relative;
+    display:block;
+    z-index: 5;
+    margin: 0 auto 0 auto;
+    padding: 20px;
+    height: calc(100vh - 64px);
+    color: #efefef;
+}
+#splash #splash-logo,
+#splash ul {
+    position: fixed;
+    top: 180px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.hidden #splash-logo,
+.hidden #splash-contact {
+    opacity:0;
+    display:none;
 }
 
-footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+#splash ul {
+    top: 300px;
+    color: white;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    min-width: 364px;
+    width: 364px;
+    transition: opacity .3s ease-in-out;
+}
+#splash li { 
+    display:inline-block;
+    padding: 0;
+    margin: 0;
+    margin: 0 40px;
+}
+#splash li:first-child {
+    margin-left: 0px;
+}
+#splash li:last-child { 
+    margin-right: 0px;
+}
+#splash li a {
+    position: relative;
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    text-align: center;
+}
+#splash li img {
+    width: 48px;
+    height: 48px;
+}
+#splash #arrow {
+    position: fixed;
+    top: 420px;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+#splash #arrow img {
+    transition: opacity .3s;
+}
+.hidden #arrow img {
+    opacity: 0;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.dropshadow {
+    position: relative;
+    z-index: 3;
+}
+header h2 {
+    margin-top: 0;
+    font-size: 18px;
+    font-weight: 300;
+}
+#stars {
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100%;
+    background-color: #030303;
+    transform: none;
+    position: fixed;
+    max-width: 1000%;
+    min-height: 100%;
+    min-width: 100%;
+    min-width: 100vw;
+    padding-bottom: 1px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -ms-transform: none;
+    -moz-transform: none;
+    -webkit-transform: none;
+    z-index: -1;
+}
+#stars img {
+    position:absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+    -webkit-box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.80);
+    -moz-box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.80);
+    box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.80);
 }
 
-code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
+#primary-header button {
+    background-color: #fff;
+    border: 2px solid #666666;
+    color: #666666;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-top: 2px;
+    height: 42px;
+    width: 42px;
+}
+#primary-header svg {
+    margin-top: 2px;
+}
+#nav-button {
+    border-radius: 4px;
+    margin-left: 12px;
+}
+#contact-button {
+    border-radius: 50%;
+    margin-right: 12px;
+}
+
+
+#sitemap li {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+#social li {
+    display: inline-block;
+    margin-left: 8px;
+}
+#social li:first-child {
+    margin-left: 0px;
+}
+
+.lead-in {
+   position: relative;
+    display: block;
+    height: calc(80vh);
 }

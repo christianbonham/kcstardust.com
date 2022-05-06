@@ -23,7 +23,7 @@
       "extends": ["plugin:testing-library/react"]
     }
   ],
-  "ignorePatterns": ["jest.*"],
+  "ignorePatterns": ["jest.*", "next.config.mjs"],
   "rules": {
     "prefer-const": "error",
     "prettier/prettier": "error"

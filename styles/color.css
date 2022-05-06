@@ -1,0 +1,29 @@
+.theme-purple .pri-dark {
+    background-color: #301261;
+    color: #fefefe;
+}
+.theme-purple .pri-med {
+    background-color: #541178;
+    color: #fff;
+}
+
+.white .mL,
+.white .mR { background-color: #fff; color: #333; }
+
+.trans-white-90 { background-color: rgba(255,255,255,0.9) }
+
+.trans-white-blend > div,
+div.trans-white-blend {
+    background-color: rgba(255,255,255,0.7); 
+}
+
+.trans-white-blend > .bed {
+    background-color: rgba(255,255,255,0.9); 
+}
+
+.grey .mL,
+.grey .mR { background-color: #C4C9E5; color: #efefef; }
+
+.transparent { background-color: transparent; }
+.trn-dark { color:#fff }
+.trn-light { color:#333 }
