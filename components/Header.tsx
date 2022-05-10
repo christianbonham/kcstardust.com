@@ -23,7 +23,7 @@ export default function Header() {
 
   return (
     <>
-      <div ref={ref} id="sticky-trigger"></div>
+      <div ref={ref} id="sticky-trigger" style={{ marginTop: '-1px' }}></div>
       <header id="header" className={headerClassName}>
         <picture id="header-bg">
           <source

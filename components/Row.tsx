@@ -2,8 +2,10 @@ interface IRowProps {
   background?: 'white' | 'grey' | 'transparent';
   children: React.ReactNode;
   classes?: string | [string];
-  flexStyle?: Object;
+  colStyle?: Object;
   id?: string;
+  marginTransparency?: boolean;
+  maxWidth?: 'small' | 'large';
 }
 
 const getClassName = (props: IRowProps) => {
@@ -15,16 +17,26 @@ const getClassName = (props: IRowProps) => {
   return str;
 };
 
+const getMarginClassName = (
+  marginClass: 'mL' | 'mR',
+  marginTransparency: boolean,
+) => {
+  const className = marginTransparency
+    ? `${marginClass} ${'opacity-85'}`
+    : `${marginClass}`;
+  return className;
+};
+
 export default function Row(props: IRowProps) {
-  const { id, children, flexStyle } = props;
+  const { id, children, colStyle, marginTransparency = false } = props;
 
   return (
     <div id={id} className={getClassName(props)}>
-      <div className="mL"></div>
-      <div className="col col-C" style={flexStyle}>
+      <div className={getMarginClassName('mL', marginTransparency)}></div>
+      <div className="col col-C" style={colStyle}>
         {children}
       </div>
-      <div className="mR"></div>
+      <div className={getMarginClassName('mR', marginTransparency)}></div>
     </div>
   );
 }

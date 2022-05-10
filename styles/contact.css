@@ -1,0 +1,131 @@
+#contact-page {
+    margin: 0 auto;
+    width: 100%;
+    min-width: 328px;
+}
+
+#juice-link:hover {
+    cursor: pointer;
+}
+
+.g-recaptcha {
+    margin-bottom: 14px;
+}
+
+
+#contact-form iframe {
+    border: 0px;
+    width: 480px;
+    height: 788px;
+    margin: 0 0 24px 0;
+}
+
+#contact-row hr {
+    color: #ccc;
+    background-color: #ccc;
+    line-height: 1px;
+    border-width: 0px;
+    height: 1px;
+}
+#contact-form {
+    margin: 0;
+    display:block;
+}
+#contact-form label {
+    box-sizing: border-box;
+    display: block;
+    margin-bottom: .3em;
+    font-size: 1rem;
+}
+
+#form-email label {
+    display:inline-block;
+}
+#form-email input,
+#form-email textarea {
+    display:block;
+}
+#contact-form button {
+    width:100%;
+    height: 30px;
+    font-size: 1rem;
+}
+#recaptcha-terms {
+    font-size: .8rem;
+    color: #999;
+    margin-top: 10px;
+}
+#recaptcha-terms a,
+#recaptcha-terms a:visited {
+    color: #999;
+    text-decoration: underline;
+}
+.grecaptcha-badge { 
+    visibility: hidden;
+}
+
+#contact-form input,
+#contact-form textarea {
+    display: block;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    height: 2em;
+    width: 100%;
+    margin: 0px 0px 1em 0px;
+    padding: 0px;
+    font-size: 1rem;
+    padding: .5rem;
+}
+
+#contact-form textarea {
+    height: auto;   
+    padding: .5rem;
+    font-family: 'Open Sans';
+}
+
+#contact-icons {
+    text-align: center;
+    padding-bottom: 16px;
+}
+#contact-icons div {
+    background-color: #541178;
+    background: linear-gradient(0deg, rgba(84,17,120,1) 80%, rgba(76,15,110,1) 100%);
+    color: #efefef;
+    font-weight: bold;
+    font-family: "Raleway";
+    padding: 4px;
+}
+#contact-icons .shape-path {
+    fill: #666666;
+}
+#contact-icons ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+#contact-icons li {
+    display: inline-block;
+    margin: 6px;
+    -webkit-box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.33);
+    -moz-box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.33);
+    box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.33);
+    border-radius: 4px;
+}
+#contact-icons li:first-child {
+    margin-left: 0px;
+}
+#contact-icons li:last-child {
+    margin-right: 0px;
+}
+#contact-icons li a {
+    display: inline-block;
+    border: 1px solid #666666;
+    border-radius: 4px;
+    width: 96px;
+}
+#contact-icons svg {
+    width: 42px;
+    height: 42px;
+    margin: 12px 8px;
+}

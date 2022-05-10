@@ -16,7 +16,7 @@ const nav: Array<INavigationItem> = [
   },
   {
     text: 'About',
-    url: 'about.html',
+    url: 'about',
   },
   {
     text: 'Contact',

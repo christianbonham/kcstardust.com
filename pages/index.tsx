@@ -1,39 +1,25 @@
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-import Image from 'next/image';
-import Head from 'next/head';
+/* eslint-disable @next/next/no-img-element */
+import { ReactElement, PropsWithChildren } from 'react';
 import Link from 'next/link';
 
-import HtmlHead from '@/components/HtmlHead';
+import LayoutOneColumn from '@/components/LayoutOneColumn';
 import Marquee from '@/components/Marquee';
 import Row from '@/components/Row';
 import Spacer from '@/components/Space';
 
-export default function Home() {
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+export default function Home(props: PropsWithChildren<{}>) {
   return (
     <div>
-      <HtmlHead title="Welcome" />
-      <Head>
-        <meta
-          key="description"
-          name="description"
-          content="KC Stardust, 
-            instructional design services, 
-            learning management system adminstration, 
-            ux development services, 
-            front-end web devlepment consulting, 
-            rapid prototyping,
-            data-driven design and development,
-            web performance auditing and optimization"
-        />
-      </Head>
       <Spacer height="calc(80vh)" />
+      <a id="services" style={{ marginTop: '128px' }}></a>
       <Marquee
         title="Instructional Design and UX Development Services"
         description="We provide world-class instructional design and
           UX design and development services through all phases of development."
       />
 
-      <Row background="white" flexStyle={{ flexWrap: 'wrap' }}>
+      <Row background="white" colStyle={{ flexWrap: 'wrap' }}>
         <div className="kcs">
           <h1>Instructional Design</h1>
           <h2 className="flair">
@@ -46,7 +32,7 @@ export default function Home() {
             experiences.
           </p>
           <p>
-            <Link href="id.html">
+            <Link href="instructional-design">
               <a>Learn More</a>
             </Link>
           </p>
@@ -64,7 +50,7 @@ export default function Home() {
             or app.
           </p>
           <p>
-            <Link href="ux.html">
+            <Link href="ux-development">
               <a>Learn More</a>
             </Link>
           </p>
@@ -84,7 +70,7 @@ export default function Home() {
               </div>
               <div className="partner-row">
                 <div className="partner-col">
-                  <Image
+                  <img
                     src="/images/lululemon-trans.png"
                     width="180"
                     height="44"
@@ -94,7 +80,7 @@ export default function Home() {
               </div>
               <div className="partner-row">
                 <div className="partner-col">
-                  <Image
+                  <img
                     src="/images/microsoft-trans.png"
                     width="140"
                     height="32"
@@ -102,7 +88,7 @@ export default function Home() {
                   />
                 </div>
                 <div className="partner-col">
-                  <Image
+                  <img
                     src="/images/expedia-trans.png"
                     width="140"
                     height="31"
@@ -112,7 +98,7 @@ export default function Home() {
               </div>
               <div className="partner-row">
                 <div className="partner-col">
-                  <Image
+                  <img
                     src="/images/sugar-mnt-logo-slider-385.png"
                     width="140"
                     height="80"
@@ -120,7 +106,7 @@ export default function Home() {
                   />
                 </div>
                 <div className="partner-col">
-                  <Image
+                  <img
                     src="/images/beechers-logo.svg"
                     width="140"
                     height="86"
@@ -147,3 +133,13 @@ export default function Home() {
     </div>
   );
 }
+
+Home.getLayout = function (page: ReactElement) {
+  const meta =
+    'KC Stardust, instructional design services, learning management system adminstration, ux development services, front-end web devlepment consulting, rapid prototyping, data-driven design and development, web performance auditing and optimization';
+  return (
+    <LayoutOneColumn hasSplash={true} title="Welcome!" metaDescription={meta}>
+      <Home>{page}</Home>
+    </LayoutOneColumn>
+  );
+};

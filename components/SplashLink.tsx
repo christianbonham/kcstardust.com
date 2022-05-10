@@ -10,7 +10,6 @@ interface ISplashLinkProps {
 
 export default function SplashLink(props: ISplashLinkProps) {
   const { alt, link, icon, style } = props;
-  console.log('splashlink:', style);
   return (
     <Link href={link} passHref={true}>
       <a style={style}>

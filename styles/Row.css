@@ -33,16 +33,19 @@
   width: auto;
   empty-cells: show;
 }
+.row .opacity-85 {
+  opacity: 0.85;
+}
 
 .col {
   position: relative;
   display: flex;
   justify-content: center;
   width: 100%;
-  padding: 24px 0px;
+  padding: 24px 48px;
   z-index: 3;
   min-width: 360px;
-  max-width: 744px;
+  max-width: 720px;
 }
 
 .two-col .col {

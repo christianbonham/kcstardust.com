@@ -1,34 +1,34 @@
-import Head from 'next/head';
+import { ReactElement } from 'react';
 
+import Contact from '@/components/Contact';
 import Header from '@/components/Header';
+import HtmlHead from '@/components/HtmlHead';
 import PageBackground from '@/components/PageBackground';
 import PageFooter from '@/components/PageFooter';
-import Splash from '@/components/Splash';
+import Space from '@/components/Space';
+import Splash from './Splash';
+
+interface ILayoutOneColumnProps {
+  children?: ReactElement;
+  hasSplash?: boolean;
+  title: string;
+  metaDescription: string;
+}
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-export default function LayoutOneColumn(props: any) {
-  const { children } = props;
+export default function LayoutOneColumn(props: ILayoutOneColumnProps) {
+  const { children, hasSplash = false, metaDescription, title } = props;
   return (
     <>
-      <Head>
-        <meta
-          key="description"
-          name="description"
-          content="KC Stardust, 
-            instructional design services, 
-            learning management system adminstration, 
-            ux development services, 
-            front-end web devlepment consulting, 
-            rapid prototyping,
-            data-driven design and development,
-            web performance auditing and optimization"
-        />
-      </Head>
+      <HtmlHead title={title} metaDescription={metaDescription} />
       <PageBackground />
-      <Splash />
+      {hasSplash && <Splash />}
       <Header />
+      <Space height="108px" />
       <main>{children}</main>
-
+      <Space height="96px" />
+      <Contact />
+      <Space height="128px" />
       <PageFooter />
     </>
   );

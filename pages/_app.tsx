@@ -2,10 +2,9 @@ import '@/styles/global.css';
 import '@/styles/header.css';
 import '@/styles/footer.css';
 import '@/styles/color.css';
+import '@/styles/contact.css';
 import '@/styles/kcs.css';
 import '@/styles/Row.css';
-
-import LayoutOneColumn from '@/components/LayoutOneColumn';
 
 import type { ReactElement, ReactNode } from 'react';
 import type { NextPage } from 'next';
@@ -20,9 +19,7 @@ type AppPropsWithLayout = AppProps & {
 };
 
 export default function MyApp({ Component, pageProps }: AppPropsWithLayout) {
-  return (
-    <LayoutOneColumn>
-      <Component {...pageProps} />
-    </LayoutOneColumn>
-  );
+  // Use the layout defined at the page level, if available
+  const getLayout = Component.getLayout ?? ((page) => page);
+  return getLayout(<Component {...pageProps} />);
 }

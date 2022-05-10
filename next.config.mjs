@@ -3,7 +3,8 @@
  */
 const nextConfig = {
   /* config options here */
-  experimental: { images: { layoutRaw: true } }
+  experimental: { images: { layoutRaw: true } },
+
 }
 
 export default nextConfig
