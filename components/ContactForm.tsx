@@ -35,7 +35,7 @@ export default function ContactForm() {
       />
     );
   };
-  /*
+
   const renderForm = () => {
     return (
       <>
@@ -110,7 +110,7 @@ export default function ContactForm() {
         <Grecaptcha />
       </>
     );
-  }; */
+  };
 
-  return <div id="contact-form">{renderIframe()}</div>;
+  return <div id="contact-form">{renderForm()}</div>;
 }

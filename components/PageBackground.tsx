@@ -18,12 +18,7 @@ export default function PageBackground() {
         srcSet="/images/milkyway/768x1024-100.jpg"
         media="(min-width: 360px)"
       />
-      <img
-        src="/images/milkyway/360x720-100.jpg"
-        alt=""
-        width="100%"
-        height="100%"
-      />
+      <img src="/images/milkyway/360x720-100.jpg" alt="" />
     </picture>
   );
 }
