@@ -1,3 +1,39 @@
+
+.row {
+  position: relative;
+  justify-content: center;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  z-index: 1;
+}
+.marginRow {
+  background-color: white;
+  position: relative;
+  height: 8px;
+}
+
+.picture {
+  position: absolute;
+  visibility: hidden;
+  width: 100vw;
+  height: 112px;
+  min-height: 112px;
+  object-fit: cover;
+  -o-object-fit: cover;
+  overflow: hidden;   
+}
+.pictureImg {
+  position:absolute;
+  height: 112px;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.visible {
+  visibility: visible;
+}
+
 .logo {    
     background-color: transparent;
     display: inline-block;
@@ -14,6 +50,24 @@
 .margin {
   flex-grow: 1;
   background-color: #fff;
+}
+
+.navRow {
+  position: relative;
+  -webkit-box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.33);
+  -moz-box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.33);
+  box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.33);
+  z-index: 3;
+  height: 48px;
+  text-align: center;
+  transition-property: height;
+  transition-duration: .3s;
+  overflow:hidden;
+  background-color: rgba(255,255,255,0.2)
+}
+/* TODO: this is confusing, that nav-mode on the parent, makes height 0 */
+.nav-mode .navRow {
+  height: 0px;
 }
 
 #logo #intro-nav {

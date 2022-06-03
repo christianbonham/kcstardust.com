@@ -1,0 +1,26 @@
+.white {
+  background-color: rgb(255,255,255);
+}
+.grey {
+  background-color: rgb(238,238,238);
+}
+.transparent {
+  background-color: transparent;
+}
+.primaryMed {
+  background-color: #541178;
+}
+.primaryDark {
+  background-color: #301261;
+}
+
+.text { 
+  color: #333;
+}
+
+.whiteTrans {
+  background-color: rgba(255,255,255,0.85);
+}
+.greyTrans {
+  background-color: rgba(238,238,238,0.85)
+}

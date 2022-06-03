@@ -6,7 +6,8 @@ interface INavigationItem {
 }
 
 interface INavListProps {
-  id: string;
+  id?: string;
+  className?: string;
 }
 
 const nav: Array<INavigationItem> = [
@@ -25,9 +26,9 @@ const nav: Array<INavigationItem> = [
 ];
 
 export default function NavList(props: INavListProps) {
-  const { id } = props;
+  const { id, className } = props;
   return (
-    <ul id={id}>
+    <ul id={id} className={className}>
       {nav.map((navItem: INavigationItem) => (
         <li key={navItem.text}>
           <Link href={navItem.url}>

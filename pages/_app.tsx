@@ -1,10 +1,7 @@
 import '@/styles/global.css';
 import '@/styles/header.css';
-import '@/styles/footer.css';
-import '@/styles/color.css';
 import '@/styles/contact.css';
 import '@/styles/kcs.css';
-import '@/styles/Row.css';
 
 import type { ReactElement, ReactNode } from 'react';
 import type { NextPage } from 'next';

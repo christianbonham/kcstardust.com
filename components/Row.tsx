@@ -1,42 +1,84 @@
+import React, { ReactNode } from 'react';
+
+import colors from '@/components/Colors.module.css';
+import styles from '@/components/Row.module.css';
+
 interface IRowProps {
-  background?: 'white' | 'grey' | 'transparent';
-  children: React.ReactNode;
+  bgColor?: string;
   classes?: string | [string];
-  colStyle?: Object;
+  children: ReactNode | [ReactNode];
+  dropShadow?: 'top' | 'bottom' | 'both';
+  flexContent?: boolean;
   id?: string;
-  marginTransparency?: boolean;
+  transparency?: boolean;
   maxWidth?: 'small' | 'large';
 }
 
-const getClassName = (props: IRowProps) => {
-  const { background, classes } = props;
-  let str = background ? `row ${background}` : 'row';
-  if (classes) {
-    str = typeof classes === 'string' ? `${str} ${classes}` : classes.join(' ');
-  }
-  return str;
+interface IColumnProps {
+  children: React.ReactNode;
+  id?: string;
+}
+
+export const getBGClassName = (color: string, transparency: boolean) => {
+  const key = transparency ? color + 'Trans' : color;
+
+  // using bind so jest doesn't complain about typeerrors
+  const classname =
+    colors.hasOwnProperty && Object.hasOwnProperty.bind(colors)(key)
+      ? colors[key]
+      : null;
+  return classname;
 };
 
-const getMarginClassName = (
-  marginClass: 'mL' | 'mR',
-  marginTransparency: boolean,
-) => {
-  const className = marginTransparency
-    ? `${marginClass} ${'opacity-85'}`
-    : `${marginClass}`;
-  return className;
-};
-
-export default function Row(props: IRowProps) {
-  const { id, children, colStyle, marginTransparency = false } = props;
+export function Column(props: IColumnProps) {
+  const { children, id } = props;
 
   return (
-    <div id={id} className={getClassName(props)}>
-      <div className={getMarginClassName('mL', marginTransparency)}></div>
-      <div className="col col-C" style={colStyle}>
-        {children}
-      </div>
-      <div className={getMarginClassName('mR', marginTransparency)}></div>
+    <div id={id} className={`${styles.col}`}>
+      {children}
     </div>
   );
 }
+
+export function Row(props: IRowProps) {
+  const {
+    bgColor = 'transparent',
+    id,
+    classes,
+    children,
+    dropShadow,
+    transparency = false,
+  } = props;
+
+  const getRowClasses = () => {
+    const rowClasses = [styles.row];
+
+    if (dropShadow === 'top') {
+      rowClasses.push(styles.shadowTop);
+    } else if (dropShadow === 'bottom') {
+      rowClasses.push(styles.shadowBottom);
+    } else if (dropShadow === 'both') {
+      rowClasses.push(styles.shadow);
+    }
+
+    const returnArray =
+      typeof classes !== 'string' && Array.isArray(classes)
+        ? [...rowClasses, ...classes]
+        : [...rowClasses, classes];
+
+    return returnArray.join(' ');
+  };
+
+  const marginClass = getBGClassName(bgColor, transparency);
+  const contentClass = getBGClassName(bgColor, false);
+
+  return (
+    <div id={id} className={getRowClasses()}>
+      <div className={`${styles.margin} ${marginClass}`} />
+      <div className={`${styles.content} ${contentClass}`}>{children}</div>
+      <div className={`${styles.margin} ${marginClass}`} />
+    </div>
+  );
+}
+
+export default Row;

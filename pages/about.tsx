@@ -7,7 +7,7 @@ import Row from '@/components/Row';
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 export default function About(props: PropsWithChildren<{}>) {
   return (
-    <Row background="white" colStyle={{ flexWrap: 'wrap' }}>
+    <Row bgColor="white">
       <div className="kcs">
         <h1>About Us</h1>
         <h2 className="flair">Let&apos;s get to know each other better.</h2>
