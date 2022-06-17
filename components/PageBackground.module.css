@@ -1,4 +1,4 @@
-#stars {
+.stars {
   left: 0;
   top: 0;
   width: 100vw;
@@ -18,7 +18,7 @@
   -webkit-transform: none;
   z-index: -1;
 }
-#stars img {
+.stars img {
   position:absolute;
   left: 50%;
   transform: translateX(-50%);

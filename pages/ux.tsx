@@ -44,7 +44,13 @@ export default function UXDevelopment(props: PropsWithChildren<{}>) {
                 <span>React</span>
               </li>
               <li>
+                <span>NextJS</span>
+              </li>
+              <li>
                 <span>NodeJS</span>
+              </li>
+              <li>
+                <span>Adobe Experience Manager</span>
               </li>
             </ul>
             <ul>

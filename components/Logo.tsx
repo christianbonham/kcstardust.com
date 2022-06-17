@@ -5,6 +5,8 @@ interface ILogoProps {
   hidden?: boolean;
 }
 
+const pathLogoTransparent = '/images/logo_trans_white.svg';
+
 export default function Logo(props: ILogoProps) {
   const { hidden = false } = props;
 
@@ -16,11 +18,9 @@ export default function Logo(props: ILogoProps) {
           <a>
             {/* eslint-disable @next/next/no-img-element */}
             <img
-              src="/images/logo-48px.svg"
+              src={pathLogoTransparent}
               alt="KC Stardust"
               className={styles.img}
-              width="auto"
-              height="72"
             />
           </a>
         </Link>
