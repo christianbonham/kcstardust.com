@@ -33,7 +33,7 @@ export default function Home(props: PropsWithChildren<{}>) {
               experiences.
             </p>
             <p>
-              <Link href="instructional-design">
+              <Link href="id">
                 <a>Learn More</a>
               </Link>
             </p>
@@ -51,7 +51,7 @@ export default function Home(props: PropsWithChildren<{}>) {
               site or app.
             </p>
             <p>
-              <Link href="ux-development">
+              <Link href="ux">
                 <a>Learn More</a>
               </Link>
             </p>

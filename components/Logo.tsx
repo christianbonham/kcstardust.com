@@ -13,18 +13,16 @@ export default function Logo(props: ILogoProps) {
   const className = hidden ? `${styles.logo} ${styles.hidden}` : styles.logo;
   return (
     <div className={className}>
-      <div>
-        <Link href="/index.html">
-          <a>
-            {/* eslint-disable @next/next/no-img-element */}
-            <img
-              src={pathLogoTransparent}
-              alt="KC Stardust"
-              className={styles.img}
-            />
-          </a>
-        </Link>
-      </div>
+      <Link href="/index.html">
+        <a>
+          {/* eslint-disable @next/next/no-img-element */}
+          <img
+            src={pathLogoTransparent}
+            alt="KC Stardust"
+            className={styles.img}
+          />
+        </a>
+      </Link>
     </div>
   );
 }

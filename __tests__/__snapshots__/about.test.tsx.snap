@@ -1,0 +1,105 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders about unchanged 1`] = `
+<div>
+  <div
+    class="row "
+  >
+    <div
+      class="margin null"
+    />
+    <div
+      class="content null"
+    >
+      <div
+        class="kcs"
+      >
+        <h1>
+          About Us
+        </h1>
+        <h2
+          class="flair"
+        >
+          Let's get to know each other better.
+        </h2>
+        <p>
+          We are a team of technology professionals based in Seattle, we provide world-class digital transformation services to business of all sizes.
+        </p>
+        <p>
+          We've been around the block. Let us show you.
+        </p>
+        <hr />
+        <div
+          class="bio"
+        >
+          <div
+            class="icons"
+          >
+            <a
+              href="https://www.linkedin.com/in/christian-bonham/"
+            >
+              <svg
+                height="24"
+                viewBox="0 0 24 24"
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                />
+              </svg>
+            </a>
+          </div>
+          <h2>
+            Christian Bonham
+          </h2>
+          <p>
+            I bridge the gap between designers and developers. I have considerable experience developing high performance modular layout design systems for large enterprise web sites. My passion is usability, and my focus is on making the journey as intuitive as possible.
+          </p>
+          <p>
+            After studying computer science at UC Santa Barbara, I started my career in UX/UI and Front-end development at Cisco Systems. I would spend the next 20 years collaborating with a large cross function team on every major project on Cisco.com. When I left Cisco I was leading a dozen engineers all over the world, working hand in hand with digital marketing designers, developing and supporting code for more than 2 million pages.
+          </p>
+        </div>
+        <div
+          class="bio"
+        >
+          <div
+            class="bio-header"
+          >
+            <div
+              class="icons"
+            >
+              <a
+                href="https://www.linkedin.com/in/-kristen-cooper/"
+              >
+                <svg
+                  height="24"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                  />
+                </svg>
+              </a>
+            </div>
+            <h2>
+              Kristen Cooper
+            </h2>
+          </div>
+          <p>
+            Instructional design combines my passions for education, technology, and design. I strive to create experiences that are memorable and create lasting impacts that help organizations thrive.
+          </p>
+          <p>
+            I am a learning & development professional with nearly a decade of experience. I began my journey into training & development in creating large scale professional development workshops and evaluating training programs. Over the years I have worked with companies to help develop business processes, launch new teams, and train staff. I studied instructional design and e-learning development at the University of Washington, and have since worked with teams as both a freelance consultant and in-house learning experience designer.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      class="margin null"
+    />
+  </div>
+</div>
+`;

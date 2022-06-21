@@ -12,7 +12,7 @@ export default function About(props: PropsWithChildren<{}>) {
         <h1>About Us</h1>
         <h2 className="flair">Let&apos;s get to know each other better.</h2>
         <p>
-          We are a team of technology professionals based in Seattle, WA.
+          We are a team of technology professionals based in Seattle, we provide
           world-class digital transformation services to business of all sizes.
         </p>
         <p>We&apos;ve been around the block. Let us show you.</p>

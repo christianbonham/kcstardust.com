@@ -10,7 +10,7 @@ export default function UXDevelopment(props: PropsWithChildren<{}>) {
   return (
     <>
       <Marquee
-        title="Instructional Design and UX Development Services"
+        title="UX Design and Development Services"
         description="We provide world-class instructional design and
           UX design and development services through all phases of development."
       />

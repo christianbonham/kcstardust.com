@@ -1,21 +1,19 @@
 
 .logo {
+  overflow: hidden;
+  position:relative;
   box-sizing: content-box;
-  background-color: transparent;
-  transition-property: background-color;
-  transition-timing-function: ease-out;
-  transition-delay: 0s;
-  transition-duration: .2s;
-  height: 48px;
   z-index:2;
+  padding: 0;
+  margin: 0;
 }
-.hidden {
+  .hidden {
   background-color: white;
 }
 .img {
     display:block;
     position:relative;
     opacity:1.0;
-    height: 48px;
-    margin: 0 -2px;
+    width: 100%;
+    height: auto;
 }

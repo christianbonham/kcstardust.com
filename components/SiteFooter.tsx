@@ -2,7 +2,7 @@
 import Link from 'next/link';
 
 import NavList from '@/components/NavList';
-import { Row, Column } from '@/components/Row';
+import { Row } from '@/components/Row';
 
 import styles from '@/components/SiteFooter.module.css';
 

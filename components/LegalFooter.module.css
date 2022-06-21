@@ -2,6 +2,7 @@
   font-size: .9rem;
   position: relative;
   background-color: #301261;
+  background-color: rgba(0,0,0,0.5);
   padding: 0;
   z-index: 3;
 }

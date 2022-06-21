@@ -5,7 +5,7 @@ import { Row, Column } from '@/components/Row';
 import LayoutOneColumn from '@/components/LayoutOneColumn';
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-export default function UXDevelopment(props: PropsWithChildren<{}>) {
+export default function Terms(props: PropsWithChildren<{}>) {
   return (
     <>
       <Row bgColor="white" transparency={true}>
@@ -254,14 +254,14 @@ export default function UXDevelopment(props: PropsWithChildren<{}>) {
   );
 }
 
-UXDevelopment.getLayout = function (page: ReactElement) {
+Terms.getLayout = function (page: ReactElement) {
   return (
     <LayoutOneColumn
-      title="UX Development"
+      title="Terms of Use"
       metaDescription="KC Stardust terms and conditions"
       showContact={false}
     >
-      <UXDevelopment>{page}</UXDevelopment>
+      <Terms>{page}</Terms>
     </LayoutOneColumn>
   );
 };

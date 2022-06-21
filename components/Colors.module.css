@@ -9,9 +9,11 @@
 }
 .primaryMed {
   background-color: #541178;
+  background-color: rgba(0,0,0,0.65);
 }
 .primaryDark {
   background-color: #301261;
+  background-color: rgba(0,0,0,0.75);
 }
 
 .text { 

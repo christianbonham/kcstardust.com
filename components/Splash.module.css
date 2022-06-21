@@ -10,7 +10,7 @@
   z-index: 5;
   margin: 0 auto 0 auto;
   padding: 20px;
-  height: calc(100vh - 64px);
+  height: calc(100vh - 56px);
   transition: opacity .3s;
   color: #efefef;
 }
@@ -30,7 +30,6 @@
   transform: translateX(-50%);
 }
 .ul {
-  border: 1px solid green;
   position: fixed;
   left: 50%;
   top: 400px;
@@ -75,4 +74,11 @@
 }
 .arrow img {
   height: 160px;
+}
+
+/* LARGE and up */
+@media screen and (min-width: 992px){ 
+  .splash {
+    height: calc(100vh - 72px);
+  }
 }

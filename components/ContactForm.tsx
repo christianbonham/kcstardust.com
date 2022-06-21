@@ -27,14 +27,14 @@ export default function ContactForm() {
     console.log('result', result);
   };
 
-  const renderIframe = () => {
+  /*  const renderIframe = () => {
     return (
       <iframe
         src="http://www.kcstardust.com/contact.php"
         title="KC Stardust Contact Form"
       />
     );
-  };
+  }; */
 
   const renderForm = () => {
     return (

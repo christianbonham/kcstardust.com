@@ -1,0 +1,180 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders UX Page unchanged 1`] = `
+<div>
+  <div
+    class="row "
+  >
+    <div
+      class="margin null"
+    />
+    <div
+      class="content null"
+    >
+      <div
+        class="col"
+      >
+        <div
+          class="mrq"
+        >
+          <h1
+            class="title"
+          >
+            UX Design and Development Services
+          </h1>
+          <p
+            class="description"
+          >
+            We provide world-class instructional design and UX design and development services through all phases of development.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      class="margin null"
+    />
+  </div>
+  <div
+    class="row "
+  >
+    <div
+      class="margin null"
+    />
+    <div
+      class="content null"
+    >
+      <div
+        class="col"
+      >
+        <div
+          class="kcs"
+        >
+          <h2
+            class="flair"
+          >
+            Accessible, delightful, enterprise quality digital experiences of all shapes and sizes.
+          </h2>
+          <p>
+            From hand-written front-end code for bespoke experiences to modular layout design systems implemented in your favorite framework we framework we provide effective development services uses the latest technologies and disciplines.
+          </p>
+          <ul
+            class="disciplines"
+          >
+            <li>
+              <span>
+                HTML
+              </span>
+            </li>
+            <li>
+              <span>
+                CSS
+              </span>
+            </li>
+            <li>
+              <span>
+                Javascript
+              </span>
+            </li>
+            <li>
+              <span>
+                Typescript
+              </span>
+            </li>
+            <li>
+              <span>
+                React
+              </span>
+            </li>
+            <li>
+              <span>
+                NextJS
+              </span>
+            </li>
+            <li>
+              <span>
+                NodeJS
+              </span>
+            </li>
+            <li>
+              <span>
+                Adobe Experience Manager
+              </span>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              Comprehensive Front-end Development
+            </li>
+            <li>
+              REST API Development
+            </li>
+            <li>
+              High Performance Animation
+            </li>
+            <li>
+              Performance Optimzation
+            </li>
+            <li>
+              Accessibility and WAI-ARIA
+            </li>
+            <li>
+              Localization
+            </li>
+            <li>
+              SEO Optimization
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div
+      class="margin null"
+    />
+  </div>
+  <div
+    class="row "
+  >
+    <div
+      class="margin null"
+    />
+    <div
+      class="content null"
+    >
+      <div
+        class="col"
+      >
+        <div
+          class="kcs"
+        >
+          <h2>
+            Design Services
+          </h2>
+          <p>
+            Create and communicate the requirements for your app or digital experiences. We create effective design requirements for engineering engineering teams. From wireframes to high fidelity functional provide the level of detail you need.
+          </p>
+          <ul>
+            <li>
+              UI/UX Requirements Development
+            </li>
+            <li>
+              Wireframes & Mockups
+            </li>
+            <li>
+              Functional Prototypes
+            </li>
+            <li>
+              User Interaction Analysis
+            </li>
+            <li>
+              User Journey and Persona Analysis
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div
+      class="margin null"
+    />
+  </div>
+</div>
+`;

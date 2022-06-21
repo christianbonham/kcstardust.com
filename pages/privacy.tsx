@@ -4,7 +4,7 @@ import { Row, Column } from '@/components/Row';
 import LayoutOneColumn from '@/components/LayoutOneColumn';
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-export default function UXDevelopment(props: PropsWithChildren<{}>) {
+export default function Privacy(props: PropsWithChildren<{}>) {
   return (
     <>
       <Row bgColor="white" transparency={true}>
@@ -141,14 +141,14 @@ export default function UXDevelopment(props: PropsWithChildren<{}>) {
   );
 }
 
-UXDevelopment.getLayout = function (page: ReactElement) {
+Privacy.getLayout = function (page: ReactElement) {
   return (
     <LayoutOneColumn
-      title="UX Development"
+      title="Privacy Policy"
       metaDescription="KC Stardust privacy policy"
       showContact={false}
     >
-      <UXDevelopment>{page}</UXDevelopment>
+      <Privacy>{page}</Privacy>
     </LayoutOneColumn>
   );
 };

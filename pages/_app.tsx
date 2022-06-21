@@ -1,5 +1,4 @@
 import '@/styles/global.css';
-import '@/styles/header.css';
 import '@/styles/contact.css';
 import '@/styles/kcs.css';
 

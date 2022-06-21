@@ -5,8 +5,6 @@
 .footer {
   position:relative;
   min-height: 120px;
-  background-color: #541178;
-  background: linear-gradient(0deg, rgba(84,17,120,1) 80%, rgba(76,15,110,1) 100%);
   font-weight: 600;
   font-family: "Raleway";
   -webkit-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.33);
