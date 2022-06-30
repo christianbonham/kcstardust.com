@@ -18,7 +18,7 @@ export const headerSources = [
   { source: `${themePath}1024x128-80.jpg`, media: '(min-width: 768px)' },
   { source: `${themePath}768x128-80.jpg`, media: '(min-width: 360px)' },
 ];
-export const defHeaderSource = `${themePath}360x128.jpg`;
+export const defHeaderSource = `${themePath}360x128-80.jpg`;
 
 export default function PageBackground() {
   return (

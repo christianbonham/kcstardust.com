@@ -12,7 +12,7 @@ export default function Home(props: PropsWithChildren<{}>) {
   return (
     <div>
       <Spacer height="calc(80vh)" />
-      <a id="services" style={{ marginTop: '128px' }}></a>
+      <a id="services" style={{ display: 'block', height: '120px' }}></a>
       <Marquee
         title="Instructional Design and UX Development Services"
         description="We provide world-class instructional design and
@@ -33,7 +33,7 @@ export default function Home(props: PropsWithChildren<{}>) {
               experiences.
             </p>
             <p>
-              <Link href="id">
+              <Link href="/id">
                 <a>Learn More</a>
               </Link>
             </p>
@@ -51,7 +51,7 @@ export default function Home(props: PropsWithChildren<{}>) {
               site or app.
             </p>
             <p>
-              <Link href="ux">
+              <Link href="/ux">
                 <a>Learn More</a>
               </Link>
             </p>
@@ -63,10 +63,11 @@ export default function Home(props: PropsWithChildren<{}>) {
         <Column>
           <div className="kcs partner-list">
             <div style={{ textAlign: 'center' }}>
-              <h3>
-                You are invited to join the group of companies we&apos;ve solved
-                problems with!
-              </h3>
+              {
+                // prettier hates the apostrophe
+                // eslint-disable-next-line prettier/prettier
+                <h3>You are invited to join the group of companies we&#39ve partnered with!</h3>
+              }
             </div>
             <div className="partner-row">
               <div className="partner-col">

@@ -14,7 +14,7 @@ export default function LegalFooter() {
     >
       <div className={styles.col}>Copyright ©2022, KC Stardust, LLC</div>
       <div className={styles.col}>
-        <Link href="">
+        <Link href="/privacy">
           <a>Privacy&nbsp;Policy</a>
         </Link>
         &nbsp;&#124;&nbsp;

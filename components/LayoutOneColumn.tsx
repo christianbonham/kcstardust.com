@@ -34,7 +34,7 @@ export default function LayoutOneColumn(props: ILayoutOneColumnProps) {
       {hasSplash && <Splash />}
 
       <Header />
-      <Space height="108px" />
+      {hasSplash && <Space height="108px" />}
 
       <main>{children}</main>
 

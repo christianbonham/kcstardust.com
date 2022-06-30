@@ -8,7 +8,7 @@ exports[`renders homepage unchanged 1`] = `
     />
     <a
       id="services"
-      style="margin-top: 128px;"
+      style="display: block; height: 120px;"
     />
     <div
       class="row "
@@ -124,7 +124,7 @@ exports[`renders homepage unchanged 1`] = `
               style="text-align: center;"
             >
               <h3>
-                You are invited to join the group of companies we've solved problems with!
+                You are invited to join the group of companies we&#39ve partnered with!
               </h3>
             </div>
             <div

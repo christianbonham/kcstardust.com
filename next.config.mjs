@@ -3,6 +3,7 @@
  */
 const nextConfig = {
   /* config options here */
+  trailingSlash: true,
   experimental: { images: { layoutRaw: true } },
 
 }

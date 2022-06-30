@@ -12,23 +12,45 @@ exports[`renders about unchanged 1`] = `
       class="content null"
     >
       <div
+        class="col"
+      >
+        <div
+          class="mrq"
+        >
+          <h1
+            class="title"
+          >
+            About Us
+          </h1>
+          <h2
+            class="cursive"
+          >
+            Let's get to know each other better.
+          </h2>
+          <p
+            class="description"
+          >
+            We are a team of technology professionals based in Seattle, we provide world-class digital transformation services to business of all sizes. We've been around the block. Let us show you.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      class="margin null"
+    />
+  </div>
+  <div
+    class="row "
+  >
+    <div
+      class="margin null"
+    />
+    <div
+      class="content null"
+    >
+      <div
         class="kcs"
       >
-        <h1>
-          About Us
-        </h1>
-        <h2
-          class="flair"
-        >
-          Let's get to know each other better.
-        </h2>
-        <p>
-          We are a team of technology professionals based in Seattle, we provide world-class digital transformation services to business of all sizes.
-        </p>
-        <p>
-          We've been around the block. Let us show you.
-        </p>
-        <hr />
         <div
           class="bio"
         >
