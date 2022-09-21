@@ -10,7 +10,7 @@ interface IMarqueeProps {
 export default function Marquee(props: IMarqueeProps) {
   const { title, subheader, description } = props;
   return (
-    <Row bgColor="transparent">
+    <Row rowColor="transparent">
       <Column>
         <div className={styles.mrq}>
           <h1 className={styles.title}>{title}</h1>

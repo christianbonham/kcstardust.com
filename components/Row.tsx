@@ -4,18 +4,21 @@ import colors from '@/components/Colors.module.css';
 import styles from '@/components/Row.module.css';
 
 interface IRowProps {
-  bgColor?: string;
+  rowColor?: string;
+  contentColor?: string;
+  marginColor?: string;
   classes?: string | [string];
   children: ReactNode | [ReactNode];
   dropShadow?: 'top' | 'bottom' | 'both';
-  flexContent?: boolean;
+  contentDisplay?: 'flex' | 'grid';
   id?: string;
   transparency?: boolean;
-  maxWidth?: 'small' | 'large';
+  contentWidth?: 'small' | 'medium' | 'larger' | 'full';
 }
 
 interface IColumnProps {
   children: React.ReactNode;
+  padding?: 'small';
   id?: string;
 }
 
@@ -42,10 +45,12 @@ export function Column(props: IColumnProps) {
 
 export function Row(props: IRowProps) {
   const {
-    bgColor = 'transparent',
-    id,
     classes,
     children,
+    contentColor = 'transparent',
+    contentDisplay,
+    rowColor = 'transparent',
+    id,
     dropShadow,
     transparency = false,
   } = props;
@@ -69,13 +74,19 @@ export function Row(props: IRowProps) {
     return returnArray.join(' ');
   };
 
-  const marginClass = getBGClassName(bgColor, transparency);
-  const contentClass = getBGClassName(bgColor, false);
+  const marginClass = getBGClassName(rowColor, transparency);
+  const contentClass = getBGClassName(contentColor, false);
+  const displayClass =
+    contentDisplay && contentDisplay === 'flex'
+      ? styles.contentFlex
+      : styles.contentGrid;
 
   return (
     <div id={id} className={getRowClasses()}>
       <div className={`${styles.margin} ${marginClass}`} />
-      <div className={`${styles.content} ${contentClass}`}>{children}</div>
+      <div className={`${styles.content} ${displayClass} ${contentClass}`}>
+        {children}
+      </div>
       <div className={`${styles.margin} ${marginClass}`} />
     </div>
   );

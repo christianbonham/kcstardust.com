@@ -37,7 +37,13 @@ const socialLinks: Array<ISocialLinkObject> = [
 
 export default function SiteFooter() {
   return (
-    <Row id="site-footer-row" bgColor="primaryMed" classes={styles.footer}>
+    <Row
+      id="site-footer-row"
+      rowColor="primaryMed"
+      contentColor="primaryMed"
+      contentDisplay="flex"
+      classes={styles.footer}
+    >
       <div className={styles.col}>
         <NavList id="footer-nav" className={styles.nav} />
       </div>

@@ -52,9 +52,7 @@ export default function Header() {
         </div>
 
         <div className={`${styles.navRow} ${!isSticky && styles.zeroHeight}`}>
-          <div className={styles.margin} />
           <NavList className={styles.navList} />
-          <div className={styles.margin} />
         </div>
       </header>
     </>

@@ -11,9 +11,8 @@
   color: #999;
   font-size: .8rem;
   flex-grow: 1;
-  width: 50%;
-  min-width: 360px;
-  padding: 0px 16px;
+  width: 100%;
+  padding: 12px;
 }
 .col:last-child {
   text-align: right;
@@ -22,4 +21,9 @@
 .col a:visited,
 .col a:active {
   color: #999;
+}
+
+.link {
+  border: 1px solid blue;
+  display: block;
 }

@@ -1,4 +1,5 @@
 import { ReactElement } from 'react';
+import Script from 'next/script';
 
 import Contact from '@/components/Contact';
 import Header from '@/components/Header';
@@ -40,12 +41,16 @@ export default function LayoutOneColumn(props: ILayoutOneColumnProps) {
 
       <Space height="96px" />
       {showContact && <Contact />}
-      <Space height="128px" />
+      <Space height="96px" />
 
       <footer>
         <SiteFooter />
         <LegalFooter />
       </footer>
+      <Script
+        src="https://www.google.com/recaptcha/api.js?render=6LfbCpkcAAAAAMqmEguoTF4vpXJNZV4iT870m6Ay"
+        strategy="afterInteractive"
+      />
     </>
   );
 }

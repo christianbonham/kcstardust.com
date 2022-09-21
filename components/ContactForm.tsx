@@ -1,20 +1,18 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-import Grecaptcha from '@/components/Grecaptcha';
+import { useState } from 'react';
+// import Grecaptcha from '@/components/Grecaptcha';
 
 export default function ContactForm() {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const handleSubmit = async (e: any) => {
-    e.preventDefault();
+  const [disabled, setDisabled] = useState(false);
 
-    const form = e.target;
-    const values = {
-      name: form.name.value,
-      email: form.email.value,
-      to: form.to.value,
-      subject: form.subject.value,
-      query: form.query.value,
-    };
-    console.log('submit', values);
+  const handleResponse = (result: any) => {
+    setDisabled(false);
+    console.log('result', result);
+  };
+
+  const sendPost = async (values: any) => {
+    console.log('what', JSON.stringify(values));
 
     const res = await fetch('/api/email', {
       body: JSON.stringify(values),
@@ -24,29 +22,56 @@ export default function ContactForm() {
       method: 'POST',
     });
     const result = await res.json();
-    console.log('result', result);
+    handleResponse(result);
   };
 
-  /*  const renderIframe = () => {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const handleSubmit = async (e: any) => {
+    e.preventDefault();
+
+    setDisabled(true);
+
+    (window as any).grecaptcha.ready(() => {
+      (window as any).grecaptcha
+        .execute('6LfbCpkcAAAAAMqmEguoTF4vpXJNZV4iT870m6Ay', {
+          action: 'submit',
+        })
+        .then((token: string) => {
+          console.log('grecaptcha.execute token', token);
+          const form = e.target;
+          const values = {
+            name: form.name.value,
+            email: form.email.value,
+            subject: form.subject.value,
+            query: form.query.value,
+            token: token,
+          };
+          console.log('submit', values);
+          sendPost(values);
+        });
+    });
+  };
+
+  const renderIframe = () => {
     return (
       <iframe
         src="http://www.kcstardust.com/contact.php"
         title="KC Stardust Contact Form"
       />
     );
-  }; */
+  };
 
+  /*
   const renderForm = () => {
     return (
       <>
         <h2>Drop Us a Line</h2>
         <p>
-          If you would want us to hit the ground running, please let us know
-          what what you are interested in. We will be happy to respond with the
-          information you need.
+          If you want us to hit the ground running, please let us know
+          interested in. We will be happy to respond with the information you
+          you need.
         </p>
         <form id="id-form" onSubmit={handleSubmit}>
-          <input type="hidden" name="to" id="to" value="spam@kcstardust.com" />
           <label htmlFor="name">Name:</label>
           <input
             type="text"
@@ -85,7 +110,7 @@ export default function ContactForm() {
             placeholder="Your question"
           ></textarea>
 
-          <button>Submit</button>
+          <button disabled={disabled}>Submit</button>
 
           <p id="recaptcha-terms">
             This site is protected by reCAPTCHA and the Google
@@ -111,6 +136,7 @@ export default function ContactForm() {
       </>
     );
   };
+  */
 
-  return <div id="contact-form">{renderForm()}</div>;
+  return <div id="contact-form">{renderIframe()}</div>;
 }

@@ -12,7 +12,7 @@ interface INavListProps {
 
 const nav: Array<INavigationItem> = [
   {
-    text: 'Servicess',
+    text: 'Services',
     url: '/#services',
   },
   {

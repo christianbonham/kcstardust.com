@@ -7,7 +7,7 @@ import LayoutOneColumn from '@/components/LayoutOneColumn';
 export default function Privacy(props: PropsWithChildren<{}>) {
   return (
     <>
-      <Row bgColor="white" transparency={true}>
+      <Row contentColor="white" transparency={true}>
         <Column>
           <h1>Privacy Policy</h1>
 

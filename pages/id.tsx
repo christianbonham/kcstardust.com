@@ -13,7 +13,7 @@ export default function InstructionalDesign(props: PropsWithChildren<{}>) {
         description="We provide world-class instructional design and
           UX design and development services through all phases of development."
       />
-      <Row bgColor="white">
+      <Row rowColor="white" contentColor="white">
         <Column>
           <div className="kcs">
             <h1>Our Process</h1>

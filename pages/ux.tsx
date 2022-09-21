@@ -14,7 +14,7 @@ export default function UXDevelopment(props: PropsWithChildren<{}>) {
         description="We provide world-class instructional design and
           UX design and development services through all phases of development."
       />
-      <Row bgColor="white">
+      <Row rowColor="white" contentColor="white">
         <Column>
           <div className="kcs">
             <h2 className="flair">
@@ -66,7 +66,7 @@ export default function UXDevelopment(props: PropsWithChildren<{}>) {
         </Column>
       </Row>
 
-      <Row bgColor="grey">
+      <Row rowColor="grey" marginColor="grey">
         <Column>
           <div className="kcs">
             <h2>Design Services</h2>

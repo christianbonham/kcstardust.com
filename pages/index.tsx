@@ -19,7 +19,7 @@ export default function Home(props: PropsWithChildren<{}>) {
           UX design and development services through all phases of development."
       />
 
-      <Row bgColor="white" dropShadow="bottom">
+      <Row rowColor="white" contentColor="white" dropShadow="bottom">
         <Column>
           <div className="kcs">
             <h1>Instructional Design</h1>
@@ -59,15 +59,14 @@ export default function Home(props: PropsWithChildren<{}>) {
         </Column>
       </Row>
 
-      <Row bgColor="grey" dropShadow="top">
+      <Row rowColor="grey" contentColor="grey" dropShadow="top">
         <Column>
           <div className="kcs partner-list">
             <div style={{ textAlign: 'center' }}>
-              {
-                // prettier hates the apostrophe
-                // eslint-disable-next-line prettier/prettier
-                <h3>You are invited to join the group of companies we&#39ve partnered with!</h3>
-              }
+              <h3>
+                You are invited to join the group of companies we&apos;ve
+                partnered with!
+              </h3>
             </div>
             <div className="partner-row">
               <div className="partner-col">

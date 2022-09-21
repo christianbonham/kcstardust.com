@@ -8,7 +8,7 @@ import LayoutOneColumn from '@/components/LayoutOneColumn';
 export default function Terms(props: PropsWithChildren<{}>) {
   return (
     <>
-      <Row bgColor="white" transparency={true}>
+      <Row contentColor="white" marginColor="white" transparency={true}>
         <Column>
           <h1>Terms of Use</h1>
 
