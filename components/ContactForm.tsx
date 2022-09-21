@@ -55,8 +55,9 @@ export default function ContactForm() {
   const renderIframe = () => {
     return (
       <iframe
-        src="http://www.kcstardust.com/contact.php"
+        src="https://kcstardust.com/contact.php"
         title="KC Stardust Contact Form"
+        height="600"
       />
     );
   };
