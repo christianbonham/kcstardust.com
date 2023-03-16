@@ -66,7 +66,7 @@ export default function UXDevelopment(props: PropsWithChildren<{}>) {
         </Column>
       </Row>
 
-      <Row rowColor="grey" marginColor="grey">
+      <Row rowColor="grey" marginColor="grey" contentColor="grey">
         <Column>
           <div className="kcs">
             <h2>Design Services</h2>

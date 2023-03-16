@@ -28,9 +28,14 @@ export default function Home(props: PropsWithChildren<{}>) {
               business.
             </h2>
             <p>
-              Create asynchronous learning modules and classes for your
-              organization or business to deliver instructor-less learning
-              experiences.
+              Organizations spend hundreds of billions of dollars on training
+              globally every year, yet only 12% of employees say they apply new
+              skills learned in L&D programs to their jobs.
+            </p>
+            <h3>We are here to change that.</h3>
+            <p>
+              Let us set your organization up for success with enjoyable (and
+              data driven!) learning experiences that produce real results.
             </p>
             <p>
               <Link href="/id">

@@ -81,21 +81,15 @@ export default function About(props: PropsWithChildren<{}>) {
                 <h2>Kristen Cooper</h2>
               </div>
               <p>
-                Instructional design combines my passions for education,
-                technology, and design. I strive to create experiences that are
-                memorable and create lasting impacts that help organizations
-                thrive.
-              </p>
-              <p>
-                I am a learning &amp; development professional with nearly a
-                decade of experience. I began my journey into training &amp;
-                development in creating large scale professional development
-                workshops and evaluating training programs. Over the years I
-                have worked with companies to help develop business processes,
-                launch new teams, and train staff. I studied instructional
-                design and e-learning development at the University of
-                Washington, and have since worked with teams as both a freelance
-                consultant and in-house learning experience designer.
+                I am a learning & development professional with over a decade of
+                experience. I began my journey into training & development in
+                2012 creating large scale professional development workshops and
+                evaluating training programs. Over the years I have worked with
+                companies to help develop business processes, launch new teams,
+                and train staff. I studied instructional design and e-learning
+                development at the University of Washington, and have since
+                worked with organizations as both a freelance consultant and
+                in-house learning experience designer.
               </p>
             </div>
           </div>
