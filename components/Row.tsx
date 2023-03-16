@@ -24,12 +24,13 @@ interface IColumnProps {
 
 export const getBGClassName = (color: string, transparency: boolean) => {
   const key = transparency ? color + 'Trans' : color;
-
+  console.log('getbgclassname', color, transparency, key);
   // using bind so jest doesn't complain about typeerrors
   const classname =
     colors.hasOwnProperty && Object.hasOwnProperty.bind(colors)(key)
       ? colors[key]
       : null;
+  console.log('classname', classname);
   return classname;
 };
 

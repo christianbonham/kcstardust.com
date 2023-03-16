@@ -6,10 +6,10 @@ export default function ContactIcons() {
     <div className={styles.root}>
       <div className={styles.margin} />
 
-      <Link href="#">
+      <Link href="javscript:void(0)">
         <a>
           <div className={styles.iconBox}>
-            <img src="/images/icons/phone-lined-24px.svg" />
+            <img src="/images/icons/phone-lined-24px.svg" alt="phone icon" />
             <div className={styles.caption}>phone</div>
           </div>
         </a>
@@ -17,10 +17,10 @@ export default function ContactIcons() {
 
       <div className={styles.margin} />
 
-      <Link href="#">
+      <Link href="javscript:void(0)">
         <a>
           <div className={styles.iconBox}>
-            <img src="/images/icons/sms-lined-24px.svg" />
+            <img src="/images/icons/sms-lined-24px.svg" alt="sms icon" />
             <div className={styles.caption}>text</div>
           </div>
         </a>
@@ -28,10 +28,10 @@ export default function ContactIcons() {
 
       <div className={styles.margin} />
 
-      <Link href="#">
+      <Link href="javscript:void(0)">
         <a>
           <div className={styles.iconBox}>
-            <img src="/images/icons/email-lined-24px.svg" />
+            <img src="/images/icons/email-lined-24px.svg" alt="email icon" />
             <div className={styles.caption}>email</div>
           </div>
         </a>
