@@ -20,6 +20,7 @@ interface IColumnProps {
   children: React.ReactNode;
   padding?: 'small';
   id?: string;
+  noPadding?: boolean;
 }
 
 export const getBGClassName = (color: string, transparency: boolean) => {
@@ -44,10 +45,11 @@ const getContentWidthClassName = (width: string) => {
 };
 
 export function Column(props: IColumnProps) {
-  const { children, id } = props;
+  const { children, id, noPadding } = props;
 
+  const paddingClass = noPadding ? styles.noPadding : '';
   return (
-    <div id={id} className={`${styles.col}`}>
+    <div id={id} className={`${styles.col} ${paddingClass}`}>
       {children}
     </div>
   );

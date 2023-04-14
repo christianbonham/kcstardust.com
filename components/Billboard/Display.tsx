@@ -1,4 +1,4 @@
-import React, { useEffect, useState, PropsWithChildren } from 'react';
+import React, { PropsWithChildren } from 'react';
 import Slice from './Slice';
 
 type RotationDirType = 'ltr' | 'rtl';
@@ -8,8 +8,9 @@ interface IDisplayProps {
   numSlices: number;
   rotate: RotationDirType;
   images: string[];
-  visIndex: number;
-  nextIndex: number;
+  frontIndex: number;
+  backIndex: number;
+  showBack: boolean;
 }
 
 const makeSlices = (
@@ -37,38 +38,19 @@ const makeSlices = (
 };
 
 export default function Display(props: PropsWithChildren<IDisplayProps>) {
-  const { classes, images, visIndex, nextIndex } = props;
-  const [showback, setShowback] = useState(false);
+  const { classes, images, frontIndex, backIndex, showBack } = props;
 
-  useEffect(() => {
-    console.log('Display useEffect');
-    setShowback((s) => !s);
-  }, [visIndex, nextIndex]);
-
-  const slices = () => {
-    if (showback) {
-      return makeSlices(
-        classes,
-        images[visIndex],
-        images[nextIndex],
-        props.numSlices,
-        props.rotate,
-      );
-    } else {
-      return makeSlices(
-        classes,
-        images[visIndex],
-        images[nextIndex],
-        props.numSlices,
-        props.rotate,
-      );
-    }
-  };
-
-  console.log('Display Render', images[visIndex], images[nextIndex]);
   return (
-    <div className={`${props.classes.display} ${showback && classes.showBack}`}>
-      {slices()}
+    <div
+      className={`${props.classes.display} ${showBack ? classes.showBack : ''}`}
+    >
+      {makeSlices(
+        classes,
+        images[frontIndex],
+        images[backIndex],
+        props.numSlices,
+        props.rotate,
+      )}
     </div>
   );
 }

@@ -13,8 +13,8 @@ export default function BillboardPage(
     <Row rowColor="white" transparency={false}>
       <Column>
         <Billboard
-          delay={3000}
-          duration={600}
+          delay={6000}
+          duration={700}
           imgHeight={720}
           imgWidth={1280}
           numSlices={40}

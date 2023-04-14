@@ -5,7 +5,12 @@ import { Row, Column } from '@/components/Row';
 export default function Contact() {
   return (
     <>
-      <Row rowColor="white" contentColor="white" transparency={true}>
+      <Row
+        rowColor="white"
+        contentColor="white"
+        contentWidth="sm"
+        transparency={true}
+      >
         <Column>
           <div className="kcs" id="contact">
             <h1>Contact us</h1>
@@ -17,12 +22,19 @@ export default function Contact() {
           </div>
         </Column>
       </Row>
-      <Row rowColor="white" transparency={true}>
-        <ContactIcons />
+      <Row rowColor="white" contentWidth="sm" transparency={true}>
+        <Column noPadding={true}>
+          <ContactIcons />
+        </Column>
       </Row>
 
-      <Row rowColor="white" contentColor="white" transparency={true}>
-        <Column>
+      <Row
+        rowColor="white"
+        contentWidth="sm"
+        contentColor="white"
+        transparency={true}
+      >
+        <Column noPadding={true}>
           <div className="kcs">
             <ContactForm />
           </div>

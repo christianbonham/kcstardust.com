@@ -3,6 +3,7 @@ import React, {
   useState,
   useEffect,
   PropsWithChildren,
+  ReactElement,
 } from 'react';
 
 import Display from './Display';
@@ -20,34 +21,32 @@ interface IBillboardProps {
 
 export default function Billboard(props: PropsWithChildren<IBillboardProps>) {
   const { children } = props;
-  const [indexes, setIndexes] = useState({ visible: 0, next: 1 });
+  const [indexes, setIndexes] = useState({ front: 0, back: 1 });
+  const [showBack, setShowBack] = useState(false);
 
   const imagesArray = React.Children.map(children, (child) => {
     return child.props.imgSrc;
   });
   const childArray = React.Children.toArray(children).map((child, index) => {
-    return React.cloneElement(child, { visible: index === indexes.visible });
+    return React.cloneElement(child as ReactElement, {
+      visible: showBack ? index === indexes.back : index === indexes.front,
+    });
   });
 
-  const nextItem = useCallback(() => {
-    console.log('next page');
-    setIndexes(() => {
-      return {
-        visible: (indexes.visible + 1) % childArray.length,
-        next: (indexes.visible + 2) % childArray.length,
-      };
-    });
-  }, [indexes, childArray]);
+  const swap = useCallback(() => {
+    console.log('Billboard nextItem');
+    setShowBack(!showBack);
+  }, [showBack]);
 
   useEffect(() => {
     console.log('Billboard useEffect');
     const timer = setTimeout(() => {
-      nextItem();
+      swap();
     }, props.delay);
     return () => clearTimeout(timer);
-  }, [props.delay, nextItem]);
+  }, [props.delay, swap]);
 
-  console.log('Billboard Render', childArray[indexes.visible].props.imgSrc);
+  console.log('Billboard Render');
   return (
     <div className={classes.bb}>
       <Display
@@ -55,8 +54,9 @@ export default function Billboard(props: PropsWithChildren<IBillboardProps>) {
         numSlices={props.numSlices}
         rotate={props.rotate}
         images={imagesArray}
-        nextIndex={indexes.next}
-        visIndex={indexes.visible}
+        frontIndex={indexes.front}
+        backIndex={indexes.back}
+        showBack={showBack}
       />
       {childArray}
     </div>
