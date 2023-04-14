@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Stripes" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 100">
+	<defs>
+		<style>
+			.cls-1,
+			.cls-2,
+			.cls-3{fill:#fff;}
+			.cls-4{fill:none;opacity:0;}
+			.cls-5,.cls-3{opacity:.25;}
+			.cls-6,.cls-2{opacity:.5;}
+		</style>
+	</defs>
+	<polygon id="Bottom_Color" points="1920 100 0 100 0 90 1920 80 1920 100"/>
+	<polygon id="_50" class="cls-6" points="1920 80 0 90 0 80 1920 60 1920 80"/>
+	<rect id="Transparent" class="cls-4" y="40" width="1920" height="20"/>
+	<polygon id="_50-2" class="cls-2" points="1920 40 0 20 0 10 1920 20 1920 40"/>
+	<polygon id="Top_Color" class="cls-1" points="1920 20 0 10 0 0 1920 0 1920 20"/>
+	<polygon id="_50-3" class="cls-5" points="1920 60 0 80 0 70 1920 40 1920 60"/>
+	<polygon id="_50-4" class="cls-3" points="1920 60 0 30 0 20 1920 40 1920 60"/>
+</svg>

@@ -4,16 +4,16 @@ import colors from '@/components/Colors.module.css';
 import styles from '@/components/Row.module.css';
 
 interface IRowProps {
-  rowColor?: string;
   contentColor?: string;
+  contentDisplay?: 'flex' | 'grid';
+  contentWidth?: 'sm' | 'med' | 'lg' | 'xl' | 'full';
   marginColor?: string;
   classes?: string | [string];
   children: ReactNode | [ReactNode];
   dropShadow?: 'top' | 'bottom' | 'both';
-  contentDisplay?: 'flex' | 'grid';
   id?: string;
+  rowColor?: string;
   transparency?: boolean;
-  contentWidth?: 'small' | 'medium' | 'larger' | 'full';
 }
 
 interface IColumnProps {
@@ -24,13 +24,22 @@ interface IColumnProps {
 
 export const getBGClassName = (color: string, transparency: boolean) => {
   const key = transparency ? color + 'Trans' : color;
-  console.log('getbgclassname', color, transparency, key);
   // using bind so jest doesn't complain about typeerrors
   const classname =
     colors.hasOwnProperty && Object.hasOwnProperty.bind(colors)(key)
       ? colors[key]
       : null;
-  console.log('classname', classname);
+  return classname;
+};
+
+const getContentWidthClassName = (width: string) => {
+  const keys = ['sm', 'med', 'lg', 'xl', 'full'];
+  const key = keys.includes(width) ? width : 'full';
+  const classname =
+    styles.hasOwnProperty && Object.hasOwnProperty.bind(styles)(key)
+      ? styles[key]
+      : styles.full;
+
   return classname;
 };
 
@@ -49,7 +58,8 @@ export function Row(props: IRowProps) {
     classes,
     children,
     contentColor = 'transparent',
-    contentDisplay,
+    contentWidth = 'med',
+    contentDisplay = 'grid',
     rowColor = 'transparent',
     id,
     dropShadow,
@@ -77,15 +87,16 @@ export function Row(props: IRowProps) {
 
   const marginClass = getBGClassName(rowColor, transparency);
   const contentClass = getBGClassName(contentColor, false);
+  const widthClass = getContentWidthClassName(contentWidth);
   const displayClass =
-    contentDisplay && contentDisplay === 'flex'
-      ? styles.contentFlex
-      : styles.contentGrid;
+    contentDisplay && contentDisplay === 'flex' ? styles.flex : styles.grid;
 
   return (
     <div id={id} className={getRowClasses()}>
       <div className={`${styles.margin} ${marginClass}`} />
-      <div className={`${styles.content} ${displayClass} ${contentClass}`}>
+      <div
+        className={`${styles.content} ${displayClass} ${contentClass} ${widthClass}`}
+      >
         {children}
       </div>
       <div className={`${styles.margin} ${marginClass}`} />
