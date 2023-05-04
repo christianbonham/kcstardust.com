@@ -7,7 +7,7 @@ import HtmlHead from '@/components/HtmlHead';
 import PageBackground from '@/components/PageBackground';
 import SiteFooter from '@/components/SiteFooter';
 import LegalFooter from '@/components/LegalFooter';
-import Segue from '@/components/Segue';
+import Transition from '@/components/Transition';
 import Space from '@/components/Space';
 import Splash from '@/components/Splash';
 
@@ -40,7 +40,8 @@ export default function LayoutOneColumn(props: ILayoutOneColumnProps) {
 
       <main>{children}</main>
 
-      <Segue />
+      <Transition />
+
       {showContact && <Contact />}
 
       <footer>

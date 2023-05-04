@@ -49,7 +49,7 @@
 .slice {
   box-sizing:border-box;
   position: relative;
-  height: 720px;
+  height: 960px;
   width: 32px;
   text-align: center;
   transition: transform 20ms;

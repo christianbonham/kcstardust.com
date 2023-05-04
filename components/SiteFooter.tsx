@@ -42,6 +42,7 @@ export default function SiteFooter() {
       rowColor="primaryMed"
       contentColor="primaryMed"
       contentDisplay="flex"
+      contentWidth="sm"
       classes={styles.footer}
     >
       <div className={styles.col}>

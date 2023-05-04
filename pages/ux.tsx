@@ -93,6 +93,7 @@ export default function UXDevelopment(props: PropsWithChildren<{}>) {
 UXDevelopment.getLayout = function (page: ReactElement) {
   return (
     <LayoutOneColumn
+      showContact={true}
       title="UX Development"
       metaDescription="KC Stardust, 
         instructional design services, 

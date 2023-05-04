@@ -21,6 +21,7 @@ interface IBillboardProps {
 
 export default function Billboard(props: PropsWithChildren<IBillboardProps>) {
   const { children } = props;
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [indexes, setIndexes] = useState({ front: 0, back: 1 });
   const [showBack, setShowBack] = useState(false);
 

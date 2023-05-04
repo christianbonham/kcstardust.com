@@ -15,7 +15,7 @@ export default function BillboardPage(
         <Billboard
           delay={6000}
           duration={700}
-          imgHeight={720}
+          imgHeight={960}
           imgWidth={1280}
           numSlices={40}
           rotate="ltr"

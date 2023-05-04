@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="bands-8px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 88">
+  <defs>
+    <style>
+      .cls-1,
+      .cls-8 {
+        opacity: .75;
+      }
+
+      .cls-2,
+      .cls-7 {
+        opacity: .5;
+      }
+
+      .cls-3,
+      .cls-6 {
+        opacity: .25;
+      }      
+
+      .cls-4,
+      .cls-5 {
+        opacity: .1;
+      }
+
+      .cls-0,
+      .cls-1,
+      .cls-2,
+      .cls-3,
+      .cls-4 {
+        fill: rgb(238,238,238);
+      }
+
+      .cls-5,
+      .cls-6,
+      .cls-7,
+      .cls-8,
+      .cls-9 {
+        fill: rgb(255,255,255, 0.0);
+      }
+    </style>
+  </defs>
+  <rect class="cls-0" x="0" width="1920" height="8" />
+  <rect class="cls-1" y="8" width="1920" height="8" />
+  <rect class="cls-2" y="16" width="1920" height="8" />
+  <rect class="cls-3" y="24" width="1920" height="8" />
+  <rect class="cls-4" y="32" width="1920" height="8" />
+  <rect class="cls-5" y="48" width="1920" height="8" />
+  <rect class="cls-6" y="56" width="1920" height="8" />
+  <rect class="cls-7" y="64" width="1920" height="8" />
+  <rect class="cls-8" y="72" width="1920" height="8" />
+  <rect class="cls-9" y="80" width="1920" height="8" />
+</svg>

@@ -141,7 +141,12 @@ Home.getLayout = function (page: ReactElement) {
   const meta =
     'KC Stardust, instructional design services, learning management system adminstration, ux development services, front-end web devlepment consulting, rapid prototyping, data-driven design and development, web performance auditing and optimization';
   return (
-    <LayoutOneColumn hasSplash={true} title="Welcome!" metaDescription={meta}>
+    <LayoutOneColumn
+      hasSplash={true}
+      showContact={true}
+      title="Welcome!"
+      metaDescription={meta}
+    >
       <Home>{page}</Home>
     </LayoutOneColumn>
   );

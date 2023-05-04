@@ -12,7 +12,7 @@ export default function LegalFooter() {
       contentColor="primaryDark"
       classes={styles.footer}
       contentDisplay="flex"
-      contentWidth="full"
+      contentWidth="sm"
     >
       <div className={styles.col}>Copyright ©2022, KC Stardust, LLC</div>
       <div className={styles.col}>
