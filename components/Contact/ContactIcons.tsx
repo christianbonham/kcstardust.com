@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import styles from '/components/ContactIcons.module.css';
+import styles from './Contact.module.css';
 
 export default function ContactIcons() {
   return (
@@ -8,7 +8,7 @@ export default function ContactIcons() {
 
       <Link href="javscript:void(0)">
         <a>
-          <div className={styles.iconBox}>
+          <div className={styles.icon}>
             <img src="/images/icons/phone-lined-24px.svg" alt="phone icon" />
             <div className={styles.caption}>phone</div>
           </div>
@@ -19,7 +19,7 @@ export default function ContactIcons() {
 
       <Link href="javscript:void(0)">
         <a>
-          <div className={styles.iconBox}>
+          <div className={styles.icon}>
             <img src="/images/icons/sms-lined-24px.svg" alt="sms icon" />
             <div className={styles.caption}>text</div>
           </div>
@@ -30,7 +30,7 @@ export default function ContactIcons() {
 
       <Link href="javscript:void(0)">
         <a>
-          <div className={styles.iconBox}>
+          <div className={styles.icon}>
             <img src="/images/icons/email-lined-24px.svg" alt="email icon" />
             <div className={styles.caption}>email</div>
           </div>

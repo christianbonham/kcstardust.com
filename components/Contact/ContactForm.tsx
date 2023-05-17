@@ -1,5 +1,7 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { useState } from 'react';
+
+import styles from './Contact.module.css';
 // import Grecaptcha from '@/components/Grecaptcha';
 
 export default function ContactForm() {
@@ -55,9 +57,10 @@ export default function ContactForm() {
   const renderIframe = () => {
     return (
       <iframe
+        className={styles.iframe}
+        height="600"
         src="https://kcstardust.com/contact.php"
         title="KC Stardust Contact Form"
-        height="600"
       />
     );
   };

@@ -1,28 +1,30 @@
 //import Link from 'next/link';
 import Link from 'next/link';
-import Row from '@/components/Row';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
-import styles from '@/components/LegalFooter.module.css';
+import colors from '@/Colors.module.css';
+import styles from './LegalFooter.module.css';
 
 export default function LegalFooter() {
   return (
-    <Row
-      id="legal-footer"
-      rowColor="primaryDark"
-      contentColor="primaryDark"
-      classes={styles.footer}
-      contentDisplay="flex"
-      contentWidth="sm"
-    >
-      <div className={styles.col}>Copyright ©2022, KC Stardust, LLC</div>
-      <div className={styles.col}>
-        <Link href="/privacy">
-          <a className={styles.link}>Privacy&nbsp;Policy</a>
-        </Link>
-        <Link href="/terms">
-          <a className={styles.link}>Terms&nbsp;&amp;&nbsp;Conditions</a>
-        </Link>
-      </div>
-    </Row>
+    <Container fluid className={`${colors.primaryDark}`}>
+      <Row id="legal-footer" className={`${styles.footer} `}>
+        <Col sm />
+        <Col sm={4} className={`${styles.col} ${styles.alignLeft}`}>
+          Copyright ©2022, KC Stardust, LLC
+        </Col>
+        <Col sm={4} className={`${styles.col} ${styles.alignRight}`}>
+          <Link href="/privacy">
+            <a className={styles.link}>Privacy&nbsp;Policy</a>
+          </Link>
+          <Link href="/terms">
+            <a className={styles.link}>Terms&nbsp;&amp;&nbsp;Conditions</a>
+          </Link>
+        </Col>
+        <Col sm />
+      </Row>
+    </Container>
   );
 }

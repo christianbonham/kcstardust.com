@@ -1,0 +1,42 @@
+  /* BASELINE SMALL and up */
+.container {
+  z-index: 3;
+  max-width:1920px;
+}
+.row {
+
+}
+.col {
+  empty-cells: show;
+}
+.widthSmall {
+  width: 540px;
+}
+
+
+.paddingNormal {
+  padding: 4em 0;
+}
+.paddingNone {
+  padding: 0;
+}
+
+
+.shadow {
+  -webkit-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.33);
+  -moz-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.33);
+  box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.33);
+  z-index: 2;
+}
+.shadowTop {
+  -webkit-box-shadow: 0px -2px 2px 0px rgba(0,0,0,0.33);
+  -moz-box-shadow: 0px -2px 2px 0px rgba(0,0,0,0.33);
+  box-shadow: 0px -2px 2px 0px rgba(0,0,0,0.33);
+  z-index: 2;
+}
+.shadowBottom {
+  -webkit-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.33);
+  -moz-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.33);
+  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.33);
+  z-index: 2;
+}

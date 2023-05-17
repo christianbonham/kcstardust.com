@@ -7,6 +7,13 @@
 .transparent {
   background-color: transparent;
 }
+.opacityLight {
+  opacity: 0.65;
+}
+.opacityHeavy {
+  opacity: 0.85;
+}
+
 .primaryMed {
   background-color: #541178;
   background-color: rgba(0,0,0,0.65);
@@ -26,3 +33,4 @@
 .greyTrans {
   background-color: rgba(238,238,238,0.85)
 }
+

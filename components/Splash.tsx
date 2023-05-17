@@ -1,8 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
 import { useRef } from 'react';
 import { useIntersectionObserver } from '@/utils/hooks';
-import SplashLink from '@/components/SplashLink';
-import styles from '@/components/Splash.module.css';
+import SplashLink from '@/SplashLink';
+import styles from '@/Splash.module.css';
+
+const logoPath = '/images/logo_121_white.svg';
 
 const links = [
   {
@@ -32,11 +34,7 @@ export default function Splash() {
   return (
     <div className={`${styles.splash} ${visClass}`}>
       <div ref={ref} className={styles.visTrigger}>
-        <img
-          className={styles.logo}
-          src="/images/logo_white.svg"
-          alt="KC Stardust"
-        />
+        <img className={styles.logo} src={logoPath} alt="KC Stardust" />
         <ul className={styles.ul}>
           {links.map((link) => (
             <li key={link.alt} className={styles.li}>

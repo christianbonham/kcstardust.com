@@ -2,11 +2,16 @@
 import { useRef } from 'react';
 import { useIntersectionObserver } from '@/utils/hooks';
 
-import Logo from '@/components/Logo';
-import NavList from '@/components/NavList';
-import styles from '@/components/Header.module.css';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
-import { headerSources, defHeaderSource } from '@/components/PageBackground';
+import Logo from '@/Logo';
+import NavList from '@/NavList';
+import styles from './Header.module.css';
+import colors from '@/Colors.module.css';
+
+import { headerSources, defHeaderSource } from '@/PageBackground';
 
 export default function Header() {
   const ref = useRef(null);
@@ -19,42 +24,46 @@ export default function Header() {
   const observer = useIntersectionObserver(ref, options);
   const isSticky = !observer?.isIntersecting;
 
+  const headerClass = isSticky
+    ? `${styles.primaryHeader} ${styles.sticky} px-0`
+    : `${styles.primaryHeader} ${styles.sticky} px-0`;
+
+  const primaryMarginClass = `${styles.primaryCol} ${colors.white}`;
+  const primaryContentClass = `${styles.primaryContent} ${colors.white} ${
+    isSticky ? styles.bgTransparent : styles.bgWhite
+  }`;
   return (
     <>
       <div ref={ref} id="sticky-trigger" style={{ marginTop: '-1px' }}></div>
-      <header className={isSticky ? styles.sticky : undefined}>
+      <Container as="header" className={headerClass}>
         <picture className={`${styles.picture} ${isSticky && styles.visible}`}>
           {headerSources.map((src) => (
             <source key={src.source} srcSet={src.source} media={src.media} />
           ))}
           <img src={defHeaderSource} alt="" className={styles.pictureImg} />
         </picture>
-
-        <div className={styles.primaryHeader}>
-          <div className={styles.marginRow} />
-          <div className={styles.row}>
-            <div className={styles.margin} />
-            <div
-              className={`${styles.rowContent} ${
-                isSticky ? styles.bgTransparent : styles.bgWhite
+        <Row className={`${styles.primaryRow} gx-0`}>
+          <Col className={primaryMarginClass} />
+          <Col className={primaryContentClass}>
+            <Logo hidden={!isSticky} />
+            <NavList
+              className={`${styles.navListIntro} ${
+                !isSticky && styles.navMode
               }`}
-            >
-              <Logo hidden={!isSticky} />
-              <NavList
-                className={`${styles.navListIntro} ${
-                  !isSticky && styles.navMode
-                }`}
-              />
-            </div>
-            <div className={styles.margin} />
-          </div>
-          <div className={styles.marginRow} />
-        </div>
-
-        <div className={`${styles.navRow} ${!isSticky && styles.zeroHeight}`}>
-          <NavList className={styles.navList} />
-        </div>
-      </header>
+            />
+          </Col>
+          <Col className={primaryMarginClass} />
+        </Row>
+        <Row
+          className={`${styles.navRow} ${!isSticky && styles.zeroHeight} gx-0`}
+        >
+          <Col className={styles.margin} />
+          <Col>
+            <NavList className={styles.navList} />
+          </Col>
+          <Col className={styles.margin} />
+        </Row>
+      </Container>
     </>
   );
 }

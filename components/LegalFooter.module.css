@@ -8,15 +8,17 @@
 }
 
 .col {
+  position: relative;
+  margin: 0px;
+  padding: 16px;
   color: #999;
   font-size: .8rem;
-  flex-grow: 1;
-  width: 100%;
-  padding: 12px;
+  vertical-align: bottom;
 }
-.col:last-child {
+.alignRight {
   text-align: right;
 }
+
 .col a,
 .col a:visited,
 .col a:active {

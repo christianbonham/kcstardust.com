@@ -4,8 +4,9 @@
   perspective: 1000px;
   height: 720px;
   width: 1280px;
-  margin: 0 auto;
-  left: translateX(-50%);
+  margin: 4em auto;
+  left: 50%;
+  transform: translateX(-50%);
   box-sizing:border-box;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 } 
