@@ -4,7 +4,7 @@
   background-color: #301261;
   background-color: rgba(0,0,0,0.5);
   padding: 0;
-  z-index: 3;
+  z-index: 10;
 }
 
 .col {
