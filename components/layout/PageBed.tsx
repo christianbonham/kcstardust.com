@@ -5,7 +5,7 @@ function PageBed(props: any) {
   const { children } = props;
 
   return (
-    <div id="page-bed" className={`px-0 wtf ${styles.page}`}>
+    <div id="page-bed" className={`px-0 ${styles.page}`}>
       {children}
     </div>
   );

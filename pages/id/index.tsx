@@ -28,7 +28,7 @@ export default function InstructionalDesign(props: PropsWithChildren<{}>) {
           </p>
           <p>
             Through full spectrum evaluation, we can help you identify blind
-            spots and develop a strategy to achieve your performance metrics.
+            spots and develop a strategy to achieve your performance metrics. We
             will never sell you a solution if we do not believe it will provide
             value to your organization.
           </p>

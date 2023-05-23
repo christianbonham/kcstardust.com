@@ -11,11 +11,11 @@ export default function LegalFooter() {
   return (
     <Container fluid className={`${colors.primaryDark}`}>
       <Row id="legal-footer" className={`${styles.footer} `}>
-        <Col sm />
-        <Col sm={3} className={`${styles.col} ${styles.alignLeft}`}>
+        <Col md />
+        <Col sm={6} className={`${styles.col} ${styles.alignLeft}`}>
           Copyright ©2022, KC Stardust, LLC
         </Col>
-        <Col sm={3} className={`${styles.col} ${styles.alignRight}`}>
+        <Col sm={6} className={`${styles.col} ${styles.alignRight}`}>
           <Link href="/privacy">
             <a className={styles.link}>Privacy&nbsp;Policy</a>
           </Link>
@@ -23,7 +23,7 @@ export default function LegalFooter() {
             <a className={styles.link}>Terms&nbsp;&amp;&nbsp;Conditions</a>
           </Link>
         </Col>
-        <Col sm />
+        <Col md />
       </Row>
     </Container>
   );

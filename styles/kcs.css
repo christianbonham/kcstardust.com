@@ -1,6 +1,7 @@
 .kcs {
     position: relative;
     z-index: 10;
+    padding: 2em 0;
 }
 
 .kcs h2.flair {
@@ -48,28 +49,21 @@
 }
 
 .kcs ul.disciplines {
-    margin:0;
+    margin:0 4em;
     padding:0;
     list-style-type: none;
 }
 
 .kcs .disciplines li {
-    padding-left:0px;
-    font-size: 1.2em;
+    margin: .2rem;
+    padding: .4em 1em;
+    font-size: 1em;
     font-weight: bold;
     display: inline-block;
     text-align:center;
     color: #888;
-}
-.kcs .disciplines span {
-    color: #000;
-    padding-right: 6px;
-}
-.kcs .disciplines li::after {
-    content: "|";
-}
-.kcs .disciplines li:last-child::after {
-    content: '';
+    border: 1px solid #000;
+    border-radius: 2em;
 }
 
 .bio {

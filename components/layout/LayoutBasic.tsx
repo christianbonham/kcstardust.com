@@ -33,24 +33,16 @@ export default function LayoutOneColumn(props: ILayoutBasicProps) {
     <PageBed>
       <HtmlHead title={title} metaDescription={metaDescription} />
       <PageBackground />
-
       {hasSplash && <Splash />}
-
       <Header />
-
       {hasSplash && <Space height="108px" />}
-
       <main>{children}</main>
-
       <Transition />
-
       {showContact && <Contact />}
-
       <footer>
         <SiteFooter />
         <LegalFooter />
       </footer>
-
       <Script
         src="https://www.google.com/recaptcha/api.js?render=6LfbCpkcAAAAAMqmEguoTF4vpXJNZV4iT870m6Ay"
         strategy="afterInteractive"

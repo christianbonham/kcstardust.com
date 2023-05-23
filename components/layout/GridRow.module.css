@@ -10,24 +10,12 @@
   empty-cells: show;
 }
 
-.widthContentSm {
-  max-width: 540px;
-}
 .widthContentMd {
   max-width: 720px;
 }
 .widthContentLg {
   max-width: 960px;
 }
-
-
-.paddingNormal {
-  padding: 4em 0;
-}
-.paddingNone {
-  padding: 0;
-}
-
 
 .shadow {
   -webkit-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.33);

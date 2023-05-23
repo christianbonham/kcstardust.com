@@ -8,14 +8,12 @@ export default function Contact() {
     <>
       <GridRow
         contentColor="white"
-        contentPadding={false}
         contentWidth="sm"
         rowColor="white"
         transparency="margin"
       >
         <div className={styles.intro} id="contact">
           <h1>Contact us</h1>
-          <h2>Help us, Help You</h2>
           <p>
             Contact us directly from your device, or send us an email message
             using the form. We are ready to start solving problems!
@@ -24,7 +22,7 @@ export default function Contact() {
       </GridRow>
       <GridRow
         contentColor="transparent"
-        contentPadding={false}
+        contentPadding="none"
         contentWidth="sm"
         rowColor="white"
         transparency="margin"
@@ -33,7 +31,6 @@ export default function Contact() {
       </GridRow>
       <GridRow
         contentColor="white"
-        contentPadding={false}
         contentWidth="sm"
         rowColor="white"
         transparency="margin"

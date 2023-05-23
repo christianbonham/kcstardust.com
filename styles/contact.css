@@ -17,7 +17,7 @@
     border: 0px;
     width: 480px;
     height: 788px;
-    margin: 24px 0 24px 0;
+    margin: 24px auto;
 }
 
 #contact-row hr {
@@ -28,8 +28,9 @@
     height: 1px;
 }
 #contact-form {
+    display: flex;
+    align-content: center;
     margin: 0;
-    display:block;
 }
 #contact-form label {
     box-sizing: border-box;

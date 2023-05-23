@@ -17,22 +17,25 @@ function UXRootPage(
       />
       <GridRow rowColor="white" contentColor="white">
         <div className="kcs">
+          <h1>UX Development Services</h1>
           <h2 className="flair">
             Accessible, delightful, enterprise quality digital experiences of
             all shapes and sizes.
           </h2>
           <p>
             From hand-written front-end code for bespoke experiences to modular
-            layout design systems implemented in your favorite framework we
-            framework we provide effective development services uses the latest
-            technologies and disciplines.
+            layout design systems implemented in your favorite framework, we
+            provide effective development services uses technologies and
+            disciplines.
           </p>
+        </div>
+        <div className="kcs">
           <ul className="disciplines">
             <li>
-              <span>HTML</span>
+              <span>HTML5</span>
             </li>
             <li>
-              <span>CSS</span>
+              <span>CSS3</span>
             </li>
             <li>
               <span>Javascript</span>
@@ -67,12 +70,16 @@ function UXRootPage(
 
       <GridRow rowColor="grey" marginColor="grey" contentColor="grey">
         <div className="kcs">
-          <h2>Design Services</h2>
+          <h1>Design Services</h1>
+          <h2 className="flair">
+            Engineering aware design requirements for your apps and digital
+            experiences.
+          </h2>
           <p>
-            Create and communicate the requirements for your app or digital
-            experiences. We create effective design requirements for engineering
-            engineering teams. From wireframes to high fidelity functional
-            provide the level of detail you need.
+            We create effective design requirements the enable engineering teams
+            thrive. From wireframes and high fidelity fidelity functional
+            prototypes, to fully realized design systems we provide the level of
+            detail you need.
           </p>
           <ul>
             <li>UI/UX Requirements Development</li>

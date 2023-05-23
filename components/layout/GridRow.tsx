@@ -7,11 +7,30 @@ import Col from 'react-bootstrap/Col';
 import colors from '@/Colors.module.css';
 import styles from './GridRow.module.css';
 
+type TPadding = 'h' | 'v' | 'hv' | 'default' | 'none';
+const paddingMap = {
+  h: 'px-4',
+  v: 'py-4',
+  hv: 'p-4',
+  default: 'px-4 py-4',
+  none: 'p-0',
+};
+type TContentWidth =
+  | 'xs'
+  | 'sm'
+  | 'md'
+  | 'lg'
+  | 'xl'
+  | 'xxl '
+  | 'full'
+  | 'auto';
+
 interface IGridRowProps {
+  contentAlign?: 'left' | 'center' | 'right';
   contentColor?: string;
   contentDisplay?: 'flex' | 'grid';
-  contentPadding?: boolean;
-  contentWidth?: 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl ' | 'full' | 'auto';
+  contentPadding?: TPadding;
+  contentWidth?: TContentWidth;
   marginColor?: string;
   classes?: string | [string];
   children: ReactNode | [ReactNode];
@@ -31,6 +50,14 @@ export const getBGClassName = (color: string, transparency: boolean) => {
   return classname;
 };
 
+const getPaddingClassName = (padding: TPadding) => {
+  const classname =
+    paddingMap.hasOwnProperty && Object.hasOwnProperty.bind(paddingMap)(padding)
+      ? paddingMap[padding]
+      : paddingMap.default;
+  return classname;
+};
+
 const renderColumn = (
   width: string,
   className: string,
@@ -40,7 +67,7 @@ const renderColumn = (
     case 'xs':
     case 'sm':
       return (
-        <Col sm={12} md={6} className={`${styles.widthContentSm} ${className}`}>
+        <Col sm={12} md={8} xl={4} className={`${className}`}>
           {children}
         </Col>
       );
@@ -63,8 +90,9 @@ export function GridRow(props: IGridRowProps) {
   const {
     classes,
     children,
+    contentAlign = 'center',
     contentColor = 'transparent',
-    contentPadding = true,
+    contentPadding = 'default',
     contentWidth = 'md',
     rowColor = 'transparent',
     id,
@@ -94,11 +122,13 @@ export function GridRow(props: IGridRowProps) {
     return returnArray.join(' ');
   };
 
-  const marginClass = getBGClassName(rowColor, false);
+  const marginClass = getBGClassName(
+    rowColor,
+    transparency === ('margin' || 'row'),
+  );
   const contentClass = getBGClassName(contentColor, false);
-  const paddingClass = contentPadding
-    ? styles.paddingNormal
-    : styles.paddingNone;
+  const paddingClass = getPaddingClassName(contentPadding);
+  const alignClass = `justify-content-${contentAlign}`;
 
   console.log('marginClass', marginClass, transparency);
   console.log('contentClass', contentClass);
@@ -106,14 +136,14 @@ export function GridRow(props: IGridRowProps) {
   return (
     <>
       <Container id={id} fluid="xs" className={`${styles.container} px-0`}>
-        <Row className={`${styles.row} gx-0`}>
-          <Col md className={`${marginClass}`} />
+        <Row className={`${styles.row} ${alignClass} gx-0`}>
+          <Col sm className={`${marginClass}`} />
           {renderColumn(
             contentWidth,
             `${contentClass} ${paddingClass}`,
             children,
           )}
-          <Col md className={`${marginClass}`} />
+          <Col sm className={`${marginClass}`} />
         </Row>
       </Container>
     </>
