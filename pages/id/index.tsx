@@ -1,6 +1,6 @@
 import { ReactElement, PropsWithChildren } from 'react';
 
-import LayoutBasic from '@/LayoutOneBasic';
+import LayoutBasic from '@/LayoutBasic';
 import Marquee from '@/Marquee';
 import { GridRow } from '@/GridRow';
 
