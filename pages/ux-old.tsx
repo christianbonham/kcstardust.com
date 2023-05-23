@@ -1,9 +1,8 @@
 import { ReactElement, PropsWithChildren } from 'react';
 
-import Marquee from '@/components/Marquee';
-import GridRow from '@/components/GridRow';
-
-import LayoutOneColumn from '@/components/LayoutOneColumn';
+import Marquee from '@/marquee/Marquee';
+import GridRow from '@/layout/GridRow';
+import LayoutOneColumn from '@/layout/LayoutBasic';
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 export default function UXDevelopment(props: PropsWithChildren<{}>) {

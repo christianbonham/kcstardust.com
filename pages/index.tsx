@@ -28,18 +28,13 @@ export default function Home(props: PropsWithChildren<{}>) {
         <div className="kcs">
           <h1>Instructional Design</h1>
           <h2 className="flair">
-            Engaging and enjoyable learning experiences for your team or
-            business.
+            Engaging and enjoyable learning experiences that produce real
+            results.
           </h2>
           <p>
-            Organizations spend hundreds of billions of dollars on training
-            globally every year, yet only 12% of employees say they apply new
-            skills learned in learning and development programs to their jobs.
-          </p>
-          <h3>We are here to change that.</h3>
-          <p>
-            Let us set your organization up for success with enjoyable (and data
-            driven!) learning experiences that produce real results.
+            Get the most out of your training budget. KC Stardust produces high
+            quality learning experiences that have created millions in value for
+            our clients. Let us do the same for you!
           </p>
           <p>
             <Link href="/id">

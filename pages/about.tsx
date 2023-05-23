@@ -86,9 +86,9 @@ export default function About(props: PropsWithChildren<{}>) {
               evaluating training programs. Over the years I have worked with
               companies to help develop business processes, launch new teams,
               and train staff. I studied instructional design and e-learning
-              development at the University of Washington, and have since worked
-              with organizations as both a freelance consultant and in-house
-              learning experience designer.
+              development at the University of Washington, and have worked with
+              organizations as both a freelance consultant and in-house learning
+              experience designer.
             </p>
           </div>
         </div>

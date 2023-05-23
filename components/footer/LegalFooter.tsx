@@ -12,10 +12,10 @@ export default function LegalFooter() {
     <Container fluid className={`${colors.primaryDark}`}>
       <Row id="legal-footer" className={`${styles.footer} `}>
         <Col sm />
-        <Col sm={2} className={`${styles.col} ${styles.alignLeft}`}>
+        <Col sm={3} className={`${styles.col} ${styles.alignLeft}`}>
           Copyright ©2022, KC Stardust, LLC
         </Col>
-        <Col sm={2} className={`${styles.col} ${styles.alignRight}`}>
+        <Col sm={3} className={`${styles.col} ${styles.alignRight}`}>
           <Link href="/privacy">
             <a className={styles.link}>Privacy&nbsp;Policy</a>
           </Link>
