@@ -6,7 +6,6 @@ import LayoutBasic from '@/layout/LayoutBasic';
 import Marquee from '@/marquee/Marquee';
 import GridRow from '@/layout/GridRow';
 import Spacer from '@/splash/Space';
-import BreakpointViewer from '@/BreakpointViewer';
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 export default function Home(props: PropsWithChildren<{}>) {
@@ -19,7 +18,6 @@ export default function Home(props: PropsWithChildren<{}>) {
         description="We provide world-class instructional design and
           UX design and development services through all phases of development."
       />
-      <BreakpointViewer />
       <GridRow
         contentColor="white"
         contentWidth="md"

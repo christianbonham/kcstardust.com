@@ -53,10 +53,10 @@ export default function SiteFooter() {
     <Container fluid className={`${theme.primaryMed}`}>
       <Row className={`${styles.row} `}>
         <Col md />
-        <Col sm={6} className={`${styles.col}`}>
+        <Col xs={6} md={4} lg={4} className={`${styles.col}`}>
           <NavList id="footer-nav" className={styles.nav} />
         </Col>
-        <Col sm={6} className={`${styles.col}`}>
+        <Col xs={6} md={4} lg={4} className={`${styles.col}`}>
           <ul className={styles.social}>
             {socialLinks &&
               socialLinks.map((linkObj: ISocialLinkObject) => {
