@@ -1,7 +1,7 @@
 import { ReactElement, PropsWithChildren } from 'react';
 
-import GridRow from '@/GridRow';
-import LayoutOneColumn from '@/Layout/LayoutOneColumn';
+import GridRow from '@/layout/GridRow';
+import LayoutBasic from '@/layout/LayoutBasic';
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 export default function Terms(props: PropsWithChildren<{}>) {
@@ -246,12 +246,12 @@ export default function Terms(props: PropsWithChildren<{}>) {
 
 Terms.getLayout = function (page: ReactElement) {
   return (
-    <LayoutOneColumn
+    <LayoutBasic
       title="Terms of Use"
       metaDescription="KC Stardust terms and conditions"
       showContact={false}
     >
       <Terms>{page}</Terms>
-    </LayoutOneColumn>
+    </LayoutBasic>
   );
 };

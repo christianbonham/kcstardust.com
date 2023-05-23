@@ -10,13 +10,13 @@
   empty-cells: show;
 }
 
-.widthContentSmall {
+.widthContentSm {
   max-width: 540px;
 }
-.widthContentMedium {
+.widthContentMd {
   max-width: 720px;
 }
-.widthContentLarge {
+.widthContentLg {
   max-width: 960px;
 }
 

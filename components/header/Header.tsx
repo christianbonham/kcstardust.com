@@ -11,7 +11,7 @@ import NavList from './NavList';
 import styles from './Header.module.css';
 import colors from '@/Colors.module.css';
 
-import { headerSources, defHeaderSource } from '@/PageBackground';
+import { headerSources, defHeaderSource } from '@/layout/PageBackground';
 
 export default function Header() {
   const ref = useRef(null);

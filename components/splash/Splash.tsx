@@ -1,8 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 import { useRef } from 'react';
 import { useIntersectionObserver } from '@/utils/hooks';
-import SplashLink from '@/SplashLink';
-import styles from '@/Splash.module.css';
+import SplashLink from './SplashLink';
+import styles from './Splash.module.css';
 
 const logoPath = '/images/logo_121_white.svg';
 

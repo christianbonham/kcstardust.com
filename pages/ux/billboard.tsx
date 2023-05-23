@@ -1,9 +1,9 @@
 import { ReactElement, PropsWithChildren } from 'react';
 
-import GridRow from '@/GridRow';
-import Billboard from '@/Billboard/Billboard';
-import BillboardItem from '@/Billboard/BillboardItem';
-import LayoutBasic from '@/Layout/LayoutOneColumn';
+import GridRow from '@/layout/GridRow';
+import Billboard from '@/billboard/Billboard';
+import BillboardItem from '@/billboard/BillboardItem';
+import LayoutBasic from '@/layout/LayoutBasic';
 
 export default function BillboardPage(
   // eslint-disable-next-line @typescript-eslint/no-unused-vars

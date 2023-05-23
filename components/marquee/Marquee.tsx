@@ -1,5 +1,5 @@
-import GridRow from '@/GridRow';
-import styles from '@/Marquee.module.css';
+import GridRow from '@/layout/GridRow';
+import styles from './Marquee.module.css';
 
 interface IMarqueeProps {
   title: string;
@@ -10,7 +10,7 @@ interface IMarqueeProps {
 export default function Marquee(props: IMarqueeProps) {
   const { title, subheader, description } = props;
   return (
-    <GridRow rowColor="transparent">
+    <GridRow contentWidth="md" rowColor="transparent">
       <div className={styles.mrq}>
         <h1 className={styles.title}>{title}</h1>
         {subheader && <h2 className={styles.cursive}>{subheader}</h2>}

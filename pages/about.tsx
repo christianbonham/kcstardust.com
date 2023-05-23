@@ -1,9 +1,9 @@
 import { ReactElement, PropsWithChildren } from 'react';
 import Link from 'next/link';
 
-import LayoutOneColumn from '@/Layout/LayoutOneColumn';
-import Marquee from '@/Marquee';
-import GridRow from '@/GridRow';
+import GridRow from '@/layout/GridRow';
+import LayoutBasic from '@/layout/LayoutBasic';
+import Marquee from '@/marquee/Marquee';
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 export default function About(props: PropsWithChildren<{}>) {
@@ -99,11 +99,11 @@ export default function About(props: PropsWithChildren<{}>) {
 
 About.getLayout = function (page: ReactElement) {
   return (
-    <LayoutOneColumn
+    <LayoutBasic
       title="About Us"
       metaDescription="KC Stardust, company bio, leadership team"
     >
       <About>{page}</About>
-    </LayoutOneColumn>
+    </LayoutBasic>
   );
 };

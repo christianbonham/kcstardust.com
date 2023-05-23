@@ -2,10 +2,10 @@
 import { ReactElement, PropsWithChildren } from 'react';
 import Link from 'next/link';
 
-import LayoutBasic from '@/LayoutBasic';
-import Marquee from '@/Marquee';
-import GridRow from '@/GridRow';
-import Spacer from '@/Space';
+import LayoutBasic from '@/layout/LayoutBasic';
+import Marquee from '@/marquee/Marquee';
+import GridRow from '@/layout/GridRow';
+import Spacer from '@/splash/Space';
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 export default function Home(props: PropsWithChildren<{}>) {
@@ -19,7 +19,12 @@ export default function Home(props: PropsWithChildren<{}>) {
           UX design and development services through all phases of development."
       />
 
-      <GridRow rowColor="white" contentColor="white" dropShadow="bottom">
+      <GridRow
+        contentColor="white"
+        contentWidth="md"
+        dropShadow="bottom"
+        rowColor="white"
+      >
         <div className="kcs">
           <h1>Instructional Design</h1>
           <h2 className="flair">

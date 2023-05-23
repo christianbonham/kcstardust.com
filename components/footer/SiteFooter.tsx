@@ -52,11 +52,11 @@ export default function SiteFooter() {
   return (
     <Container fluid className={`${theme.primaryMed}`}>
       <Row className={`${styles.row} `}>
-        <Col md />
-        <Col sm={4} className={`${styles.col}`}>
+        <Col sm />
+        <Col sm={3} className={`${styles.col}`}>
           <NavList id="footer-nav" className={styles.nav} />
         </Col>
-        <Col sm={4} className={`${styles.col}`}>
+        <Col sm={3} className={`${styles.col}`}>
           <ul className={styles.social}>
             {socialLinks &&
               socialLinks.map((linkObj: ISocialLinkObject) => {
@@ -77,7 +77,7 @@ export default function SiteFooter() {
               })}
           </ul>
         </Col>
-        <Col md />
+        <Col sm />
       </Row>
     </Container>
   );

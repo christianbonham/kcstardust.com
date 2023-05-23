@@ -1,16 +1,16 @@
 import { ReactElement } from 'react';
 import Script from 'next/script';
 
-import Contact from '@/Contact/Contact';
+import Contact from '@/contact/Contact';
 import Header from '@/header/Header';
 import HtmlHead from '@/HtmlHead';
-import PageBed from '@/PageBed';
-import PageBackground from '@/PageBackground';
-import SiteFooter from '@/SiteFooter';
-import LegalFooter from '@/LegalFooter';
-import Transition from '@/Transition';
-import Space from '@/Space';
-import Splash from '@/Splash';
+import PageBed from './PageBed';
+import PageBackground from './PageBackground';
+import SiteFooter from '@/footer/SiteFooter';
+import LegalFooter from '@/footer/LegalFooter';
+import Space from '@/splash/Space';
+import Splash from '@/splash/Splash';
+import Transition from '@/layout/Transition';
 
 interface ILayoutBasicProps {
   children?: ReactElement;

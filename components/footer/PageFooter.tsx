@@ -1,5 +1,5 @@
-import LegalFooter from '@/LegalFooter';
-import SiteFooter from '@/SiteFooter';
+import LegalFooter from '@/footer/LegalFooter';
+import SiteFooter from '@/footer/SiteFooter';
 
 export default function PageFooter() {
   return (

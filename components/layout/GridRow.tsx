@@ -5,7 +5,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 import colors from '@/Colors.module.css';
-import styles from '@/GridRow.module.css';
+import styles from './GridRow.module.css';
 
 interface IGridRowProps {
   contentColor?: string;
@@ -40,17 +40,13 @@ const renderColumn = (
     case 'xs':
     case 'sm':
       return (
-        <Col
-          sm={12}
-          md={6}
-          className={`${styles.widthContentSmall} ${className}`}
-        >
+        <Col sm={12} md={6} className={`${styles.widthContentSm} ${className}`}>
           {children}
         </Col>
       );
     case 'md':
       return (
-        <Col md={6} className={`${className}`}>
+        <Col md={6} className={`${styles.widthContentMd} ${className}`}>
           {children}
         </Col>
       );

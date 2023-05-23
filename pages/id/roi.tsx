@@ -1,8 +1,8 @@
 import { ReactElement, PropsWithChildren } from 'react';
 
-import LayoutOneColumn from '@/Layout/LayoutOneColumn';
+import LayoutOneColumn from '@/layout/LayoutOneColumn';
 import Marquee from '@/Marquee';
-import { GridRow } from '@/GridRow';
+import { GridRow } from '@/layout/GridRow';
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 export default function InstructionalDesign(props: PropsWithChildren<{}>) {

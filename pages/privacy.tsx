@@ -1,7 +1,7 @@
 import { ReactElement, PropsWithChildren } from 'react';
 
-import GridRow from '@/GridRow';
-import LayoutOneColumn from '@/Layout/LayoutOneColumn';
+import GridRow from '@/layout/GridRow';
+import LayoutBasic from '@/layout/LayoutBasic';
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 export default function Privacy(props: PropsWithChildren<{}>) {
@@ -138,12 +138,12 @@ export default function Privacy(props: PropsWithChildren<{}>) {
 
 Privacy.getLayout = function (page: ReactElement) {
   return (
-    <LayoutOneColumn
+    <LayoutBasic
       title="Privacy Policy"
       metaDescription="KC Stardust privacy policy"
       showContact={false}
     >
       <Privacy>{page}</Privacy>
-    </LayoutOneColumn>
+    </LayoutBasic>
   );
 };

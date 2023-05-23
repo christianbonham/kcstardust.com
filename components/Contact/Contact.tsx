@@ -1,7 +1,7 @@
 import styles from './Contact.module.css';
-import ContactForm from '@/Contact/ContactForm';
-import ContactIcons from '@/Contact/ContactIcons';
-import GridRow from '@/GridRow';
+import ContactForm from '@/contact/ContactForm';
+import ContactIcons from '@/contact/ContactIcons';
+import GridRow from '@/layout/GridRow';
 
 export default function Contact() {
   return (
