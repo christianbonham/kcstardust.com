@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import styles from './Contact.module.css';
+import styles from './ContactIcons.module.css';
 
 export default function ContactIcons() {
   return (

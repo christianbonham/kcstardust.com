@@ -4,7 +4,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-import NavList from '@/NavList';
+import NavList from '@/header/NavList';
 
 import theme from '@/Colors.module.css';
 import styles from './SiteFooter.module.css';

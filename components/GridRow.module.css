@@ -9,8 +9,15 @@
 .col {
   empty-cells: show;
 }
-.widthSmall {
-  width: 540px;
+
+.widthContentSmall {
+  max-width: 540px;
+}
+.widthContentMedium {
+  max-width: 720px;
+}
+.widthContentLarge {
+  max-width: 960px;
 }
 
 

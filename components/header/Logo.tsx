@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import styles from '@/components/Logo.module.css';
+import styles from './Logo.module.css';
 
 interface ILogoProps {
   hidden?: boolean;

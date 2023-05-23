@@ -23,6 +23,7 @@ export default function Contact() {
         </div>
       </GridRow>
       <GridRow
+        contentColor="transparent"
         contentPadding={false}
         contentWidth="sm"
         rowColor="white"

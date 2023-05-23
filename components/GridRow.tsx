@@ -40,13 +40,17 @@ const renderColumn = (
     case 'xs':
     case 'sm':
       return (
-        <Col md={3} className={className}>
+        <Col
+          sm={12}
+          md={6}
+          className={`${styles.widthContentSmall} ${className}`}
+        >
           {children}
         </Col>
       );
     case 'md':
       return (
-        <Col md={4} className={className}>
+        <Col md={6} className={`${className}`}>
           {children}
         </Col>
       );
@@ -105,7 +109,7 @@ export function GridRow(props: IGridRowProps) {
 
   return (
     <>
-      <Container id={id} fluid="xl" className={`${styles.container} px-0`}>
+      <Container id={id} fluid="xs" className={`${styles.container} px-0`}>
         <Row className={`${styles.row} gx-0`}>
           <Col md className={`${marginClass}`} />
           {renderColumn(

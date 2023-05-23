@@ -2,7 +2,7 @@ import { ReactElement } from 'react';
 import Script from 'next/script';
 
 import Contact from '@/Contact/Contact';
-import Header from '@/Header';
+import Header from '@/header/Header';
 import HtmlHead from '@/HtmlHead';
 import PageBackground from '@/PageBackground';
 import SiteFooter from '@/SiteFooter';

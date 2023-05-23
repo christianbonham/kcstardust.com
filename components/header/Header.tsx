@@ -6,8 +6,8 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-import Logo from '@/Logo';
-import NavList from '@/NavList';
+import Logo from './Logo';
+import NavList from './NavList';
 import styles from './Header.module.css';
 import colors from '@/Colors.module.css';
 
