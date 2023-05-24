@@ -1,7 +1,7 @@
 import { ReactElement, PropsWithChildren } from 'react';
 
-import LayoutOneColumn from '@/layout/LayoutOneColumn';
-import Marquee from '@/Marquee';
+import LayoutBasic from '@/layout/LayoutBasic';
+import Marquee from '@/marquee/Marquee';
 import { GridRow } from '@/layout/GridRow';
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -59,13 +59,13 @@ export default function InstructionalDesign(props: PropsWithChildren<{}>) {
 
 InstructionalDesign.getLayout = function (page: ReactElement) {
   return (
-    <LayoutOneColumn
+    <LayoutBasic
       title="Instructional Design"
       metaDescription="KC Stardust, 
       instructional design services, 
       learning management system adminstration."
     >
       <InstructionalDesign>{page}</InstructionalDesign>
-    </LayoutOneColumn>
+    </LayoutBasic>
   );
 };

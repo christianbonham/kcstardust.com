@@ -22,15 +22,12 @@ export default function InstructionalDesign(props: PropsWithChildren<{}>) {
           </h2>
           <h2>Learning &amp; Development Strategy Consulting</h2>
           <p>
-            Is training <i>really</i> the solution to your problem? Do you have
-            the full picture of why you&amp;re falling short of your business
-            goals?
-          </p>
-          <p>
-            Through full spectrum evaluation, we can help you identify blind
-            spots and develop a strategy to achieve your performance metrics. We
-            will never sell you a solution if we do not believe it will provide
-            value to your organization.
+            We can provide a complete evaluation of all the factors that can
+            affect performance. We will look at potential gaps such as
+            resources, motivation, knowledge and skills. This paints a clear
+            picture of what is holding you back from your business goals. In
+            this way, we can tailor your solution to something that will have
+            maximum impact for your organization.
           </p>
 
           <h2>Technical training</h2>
