@@ -1,6 +1,7 @@
 import { ReactElement, PropsWithChildren } from 'react';
 import Link from 'next/link';
 
+import AuthorBio from '@/AuthorBio/AuthorBio';
 import GridRow from '@/layout/GridRow';
 import LayoutBasic from '@/layout/LayoutBasic';
 import Marquee from '@/marquee/Marquee';
@@ -38,24 +39,33 @@ export default function About(props: PropsWithChildren<{}>) {
                 </a>
               </Link>
             </div>
-            <h2>Christian Bonham</h2>
-            <p>
-              I bridge the gap between designers and developers. I have
-              considerable experience developing high performance modular layout
-              design systems for large enterprise web sites. My passion is
-              usability, and my focus is on making the journey as intuitive as
-              possible.
-            </p>
-            <p>
-              After studying computer science at UC Santa Barbara, I started my
-              career in UX/UI and Front-end development at Cisco Systems. I
-              would spend the next 20 years collaborating with a large cross
-              function team on every major project on Cisco.com. When I left
-              Cisco I was leading a dozen engineers all over the world, working
-              hand in hand with digital marketing designers, developing and
-              supporting code for more than 2 million pages.
-            </p>
+            <AuthorBio
+              name="Christian Bonham"
+              title="Engineering Leader | Developer | Program Manager"
+            >
+              <p>
+                I am a veteran developer of more than 25 years. I have used that
+                time leading engineering teams and collaborating with designers
+                to implementing omni-channel digital marketing experiences. My
+                talents include both engineering management and team building,
+                as well as the creative and coding chops to lead the
+                architectural design and implementation of design systems for
+                the web. I have a proven track record of enabling talented teams
+                in adopting emerging web technologies and platforms, on millions
+                of millions of pages at once, repeatedly over time.
+              </p>
+              <p>
+                My passion is usability, and my focus is on making the journey
+                as intuitive for users as possible. My experience is in enabling
+                creative teams to efficiently advance brand and business
+                objectives, while enabling engineering iteration and cost
+                savings. I&apos;m looking forward to hearing about problem You
+                have to solve.
+              </p>
+            </AuthorBio>
           </div>
+        </div>
+        <div className="kcs">
           <div className="bio">
             <div className="bio-header">
               <div className="icons">
@@ -77,19 +87,24 @@ export default function About(props: PropsWithChildren<{}>) {
                   </a>
                 </Link>
               </div>
-              <h2>Kristen Cooper</h2>
+              <AuthorBio
+                name="Kristen Cooper"
+                title="Talent Development | Instructional Design"
+              >
+                <p>
+                  I am a learning & development professional with over a decade
+                  of of experience. I began my journey into training &
+                  development in 2012 creating large scale professional
+                  development workshops and evaluating training programs. Over
+                  the years I have worked with companies to help develop
+                  business processes, launch new teams, and train staff. I
+                  studied instructional design and e-learning development at the
+                  University of Washington, and have worked with organizations
+                  as both a freelance consultant and in-house learning
+                  experience designer.
+                </p>
+              </AuthorBio>
             </div>
-            <p>
-              I am a learning & development professional with over a decade of
-              experience. I began my journey into training & development in 2012
-              creating large scale professional development workshops and
-              evaluating training programs. Over the years I have worked with
-              companies to help develop business processes, launch new teams,
-              and train staff. I studied instructional design and e-learning
-              development at the University of Washington, and have worked with
-              organizations as both a freelance consultant and in-house learning
-              experience designer.
-            </p>
           </div>
         </div>
       </GridRow>

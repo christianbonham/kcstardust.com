@@ -4,9 +4,14 @@
     padding: 2em 0;
 }
 
+.kcs h2 {
+  font-weight: bolder;
+}
+
 .kcs h2.flair {
     font-family: 'Coquette', cursive;
     font-size: 1.7rem;
+    font-weight: 600;
     line-height: 1.2em;
     margin-bottom: 1em;
 }
