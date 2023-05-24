@@ -26,7 +26,7 @@ export default function Header() {
 
   const headerClass = isSticky
     ? `${styles.primaryHeader} ${styles.sticky} px-0`
-    : `${styles.primaryHeader} ${styles.sticky} px-0`;
+    : `${styles.primaryHeader} px-0`;
 
   const primaryMarginClass = `${styles.primaryCol} ${colors.white}`;
   const primaryContentClass = `${styles.primaryContent} ${colors.white} ${

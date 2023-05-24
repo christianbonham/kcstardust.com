@@ -12,8 +12,8 @@ function UXRootPage(
     <>
       <Marquee
         title="UX Design and Development Services"
-        description="We provide world-class instructional design and
-          UX design and development services through all phases of development."
+        description="We provide world-class User Experience design and
+          development services through all phases of development."
       />
       <GridRow rowColor="white" contentColor="white">
         <div className="kcs">
@@ -76,10 +76,10 @@ function UXRootPage(
             experiences.
           </h2>
           <p>
-            We create effective design requirements the enable engineering teams
-            thrive. From wireframes and high fidelity fidelity functional
-            prototypes, to fully realized design systems we provide the level of
-            detail you need.
+            We create effective design requirements that enable engineering
+            teams to thrive. From wireframes and high fidelity functional
+            prototypes, to fully realized design systems, we provide the level
+            of detail you need.
           </p>
           <ul>
             <li>UI/UX Requirements Development</li>

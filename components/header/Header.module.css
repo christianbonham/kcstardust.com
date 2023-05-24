@@ -196,6 +196,9 @@
   .navRow {
     height: 44px;
   }
+  .zeroHeight {
+    height: 0px;
+  }
 }
 /* XXLARGE and up */
 @media screen and (min-width: 1200px){ }

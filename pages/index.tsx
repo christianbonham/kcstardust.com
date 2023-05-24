@@ -15,8 +15,8 @@ export default function Home(props: PropsWithChildren<{}>) {
       <a id="services" style={{ display: 'block', height: '120px' }}></a>
       <Marquee
         title="Instructional Design and UX Development Services"
-        description="We provide world-class instructional design and
-          UX design and development services through all phases of development."
+        description="We provide world-class Instructional Design and
+          User Experience development services for businesses of all sizes."
       />
       <GridRow
         contentColor="white"
@@ -49,9 +49,8 @@ export default function Home(props: PropsWithChildren<{}>) {
             any scale.
           </h2>
           <p>
-            We provide design and development services to create requirements,
-            and implement user interfaces and digital experiences for your site
-            or app.
+            We provide world-class User Experience design and development
+            services through all phases of development for your site or app.
           </p>
           <p>
             <Link href="/ux">

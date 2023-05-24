@@ -22,8 +22,8 @@ export default function InstructionalDesign(props: PropsWithChildren<{}>) {
           </h2>
           <h2>Learning &amp; Development Strategy Consulting</h2>
           <p>
-            Is training really the solution to your problem? Do you have the
-            full picture of why you&apos;re falling short of your business
+            Is training <i>really</i> the solution to your problem? Do you have
+            the full picture of why you&amp;re falling short of your business
             goals?
           </p>
           <p>
@@ -34,14 +34,15 @@ export default function InstructionalDesign(props: PropsWithChildren<{}>) {
           </p>
 
           <h2>Technical training</h2>
-          <h2 className="flair">
-            Complex technical information that is easy to digest, apply and
-            remember.
-          </h2>
+          <p>
+            We follow 3 key principles to distill complex technical information
+            into something that is easy to digest, apply, and remember:
+          </p>
           <ol>
             <li>
-              <strong>SHOW DON&apos;T TELL.</strong>Experiential learning is our
-              north star. We let learners take the lead with hands-on practice.
+              <strong>SHOW DON&apos;T TELL.</strong> Experiential learning is
+              our north star. We let learners take the lead with hands-on
+              practice.
             </li>
             <li>
               <strong>REDUCE BARRIERS.</strong> We eliminate friction between
@@ -76,7 +77,7 @@ export default function InstructionalDesign(props: PropsWithChildren<{}>) {
           <p>
             {`Did you know that all learning experiences have 5 phases? Learning
               is never a \u2018one and done\u2019 event. We specialize in
-              helping helping organizations shift their cultures. We can help you
+              helping organizations shift their cultures. We can help you
               determine the right tactics to ensure program success and support
               continuous performance improvement.`}
           </p>
