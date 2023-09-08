@@ -1,9 +1,8 @@
 import styles from './Contact.module.css';
-import ContactForm from '@/contact/ContactForm';
 import ContactIcons from '@/contact/ContactIcons';
 import GridRow from '@/layout/GridRow';
 
-export default function Contact() {
+export default function Contact(props: any) {
   return (
     <>
       <GridRow
@@ -35,7 +34,7 @@ export default function Contact() {
         rowColor="white"
         transparency="margin"
       >
-        <ContactForm />
+        {props.children}
       </GridRow>
     </>
   );

@@ -28,8 +28,6 @@ function UXRootPage(
             provide effective development services uses technologies and
             disciplines.
           </p>
-        </div>
-        <div className="kcs">
           <ul className="disciplines">
             <li>
               <span>HTML5</span>

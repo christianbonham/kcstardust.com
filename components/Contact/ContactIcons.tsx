@@ -6,7 +6,7 @@ export default function ContactIcons() {
     <div className={styles.root}>
       <div className={styles.margin} />
 
-      <Link href="javscript:void(0)">
+      <Link href="tel:206-588-5802">
         <a>
           <div className={styles.icon}>
             <img src="/images/icons/phone-lined-24px.svg" alt="phone icon" />
@@ -17,7 +17,7 @@ export default function ContactIcons() {
 
       <div className={styles.margin} />
 
-      <Link href="javscript:void(0)">
+      <Link href="sms:206-588-5802">
         <a>
           <div className={styles.icon}>
             <img src="/images/icons/sms-lined-24px.svg" alt="sms icon" />
@@ -28,7 +28,7 @@ export default function ContactIcons() {
 
       <div className={styles.margin} />
 
-      <Link href="javscript:void(0)">
+      <Link href="mailto:info@kcstardust.com">
         <a>
           <div className={styles.icon}>
             <img src="/images/icons/email-lined-24px.svg" alt="email icon" />
